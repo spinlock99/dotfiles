@@ -1,0 +1,875 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$.fn	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  $.fn[NAME] = function (value) {$/;"	f	language:JavaScript
+$.fn.wPaint	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^	$.fn.wPaint = function(option, settings)$/;"	f	language:JavaScript
+$.fn.wPaint.defaultSettings.fillStyle	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		fillStyle			: '#FFFFFF',		\/\/ starting fill style$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.fontFamilyOptions	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		fontFamilyOptions	: ['Arial', 'Courier', 'Times', 'Trebuchet', 'Verdana'],$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.fontSize	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		fontSize			: '12',				\/\/ current font size for text input$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.fontSizeMax	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		fontSizeMax			: '20',				\/\/ max font size in px$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.fontSizeMin	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		fontSizeMin			: '8',				\/\/ min font size in px$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.lineWidth	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		lineWidth			: '2', 				\/\/ starting line width$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.lineWidthMax	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		lineWidthMax		: '10',				\/\/ line widh max for select drop down$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.lineWidthMin	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		lineWidthMin		: '0', 				\/\/ line width min for select drop down$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.mode	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		mode				: 'Pencil',			\/\/ drawing mode - Rectangle, Ellipse, Line, Pencil, Eraser$/;"	p	language:JavaScript
+$.fn.wPaint.defaultSettings.strokeStyle	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		strokeStyle			: '#FFFF00',		\/\/ start stroke style$/;"	p	language:JavaScript
+<C-c>	/Users/spinlock/.vimrc	/^vmap <C-c> :w !pbcopy<CR><CR>$/;"	m	language:Vim
+<c-h>	/Users/spinlock/.vimrc	/^nmap <c-h> <c-w>h$/;"	m	language:Vim
+<C-J>	/Users/spinlock/.vimrc	/^map <C-J> <C-W>j<C-W>_$/;"	m	language:Vim
+<C-K>	/Users/spinlock/.vimrc	/^map <C-K> <C-W>k<C-W>_$/;"	m	language:Vim
+<c-l>	/Users/spinlock/.vimrc	/^nmap <c-l> <c-w>l$/;"	m	language:Vim
+<C-r>	/Users/spinlock/.vimrc	/^noremap <C-r> :!ruby %<cr>$/;"	m	language:Vim
+<C-x>	/Users/spinlock/.vimrc	/^vmap <C-x> :!pbcopy<CR>$/;"	m	language:Vim
+<Leader>a	/Users/spinlock/.vimrc	/^map <Leader>a :call RunAllSpecs()<CR>$/;"	m	language:Vim
+<Leader>l	/Users/spinlock/.vimrc	/^map <Leader>l :call RunLastSpec()<CR>$/;"	m	language:Vim
+<Leader>s	/Users/spinlock/.vimrc	/^map <Leader>s :call RunNearestSpec()<CR>$/;"	m	language:Vim
+<Leader>t	/Users/spinlock/.vimrc	/^map <Leader>t :call RunCurrentSpecFile()<CR>$/;"	m	language:Vim
+add	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def add(coin)$/;"	f	language:Ruby	class:CashRegister.coins=.Change
+add	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/change.rb	/^  def add(coin)$/;"	f	language:Ruby	class:Change
+add	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/change.rb	/^  def add(coin)$/;"	f	language:Ruby	class:Change
+add	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/change.rb	/^  def add(coin)$/;"	f	language:Ruby	class:Change
+add	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def add(coin)$/;"	f	language:Ruby	class:Change.value
+add!	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def add!(coin)$/;"	f	language:Ruby	class:CashRegister.Change
+AddPressPayCustomers	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_customers.php	/^  class AddPressPayCustomers {$/;"	c	language:PHP
+AddPressPayEmails	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_emails.php	/^  class AddPressPayEmails {$/;"	c	language:PHP
+AddPressPayTransactions	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_transactions.php	/^  class AddPressPayTransactions {$/;"	c	language:PHP
+AddScreenShotToWebSites	/Users/spinlock/traction/db/migrate/20151025233323_add_screen_shot_to_web_sites.rb	/^class AddScreenShotToWebSites < ActiveRecord::Migration$/;"	c	language:Ruby
+add_connect_endpoint	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^  public function add_connect_endpoint() {$/;"	f	language:PHP
+add_javascript	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public  function add_javascript()$/;"	f	language:PHP
+add_paint	/Users/spinlock/WordPress/Plugins/paint-press/paint-press.php	/^function add_paint() {$/;"	f	language:PHP
+add_press_pay_customers	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/migrate.php	/^  $add_press_pay_customers    = new AddPressPayCustomers;$/;"	v	language:PHP
+add_press_pay_emails	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/migrate.php	/^  $add_press_pay_emails       = new AddPressPayEmails;$/;"	v	language:PHP
+add_press_pay_transactions	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/migrate.php	/^  $add_press_pay_transactions = new AddPressPayTransactions;$/;"	v	language:PHP
+add_stripe_customer_id_to_user	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function add_stripe_customer_id_to_user( $user ) {$/;"	f	language:PHP
+add_upgrade_endpoint	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^  public function add_upgrade_endpoint() {$/;"	f	language:PHP
+AdminController	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^<?php class AdminController extends Controller {$/;"	c	language:PHP
+adminController	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $adminController = new AdminController;$/;"	v	language:PHP
+admin_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $this->admin_email = get_bloginfo( 'admin_email' );$/;"	v	language:PHP
+admin_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  private $admin_email;$/;"	v	language:PHP
+admin_email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $admin_email     = get_bloginfo('admin_email');$/;"	v	language:PHP
+admin_email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function admin_email() {$/;"	f	language:PHP
+ADMIN_TEST	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  define('ADMIN_TEST', false);$/;"	d	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$amount = $this->stripe_options['fee_amount'] * 100;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->amount = $amount;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $amount;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $amount = $last_charge->amount \/ 100;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $amount          = $last_charge->amount \/ 100;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $amount = base64_decode( $_POST['amount'] );$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $amount = $transaction->amount \/ 100;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->amount                = $params['amount'];$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $amount;$/;"	v	language:PHP
+amount	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $amount = base64_decode( $_POST['amount'] );$/;"	v	language:PHP
+API	/Users/spinlock/traction/app/api/base.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/api/v1/base.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/api/v1/defaults.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/api/v1/web_sites.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/controllers/api/base.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/controllers/api/v1/base.rb	/^module API$/;"	m	language:Ruby
+API	/Users/spinlock/traction/app/controllers/api/v1/web_sites.rb	/^module API$/;"	m	language:Ruby
+API.enable	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    enable: Plugin.prototype.enable,$/;"	p	language:JavaScript
+Application	/Users/spinlock/easy_post/easypost-sample-tracker/config/application.rb	/^  class Application < Rails::Application$/;"	c	language:Ruby	class:EasypostSampleTracker
+Application	/Users/spinlock/traction/config/application.rb	/^  class Application < Rails::Application$/;"	c	language:Ruby	class:Traction
+ApplicationController	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c	language:Ruby
+ApplicationController	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c	language:Ruby
+atomic_process_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  private function atomic_process_discount(){$/;"	f	language:PHP
+atomic_process_one_time_payment	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  private function atomic_process_one_time_payment(){$/;"	f	language:PHP
+atomic_process_recurring_payment	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  private function atomic_process_recurring_payment(){$/;"	f	language:PHP
+authenticate	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def self.authenticate(email, submitted_password)$/;"	F	language:Ruby	class:User
+authenticate_with_salt	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def self.authenticate_with_salt(id, cookie_salt)$/;"	F	language:Ruby	class:User
+Base	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^    class Base$/;"	c	language:Ruby	class:Kata.Setup
+Base	/Users/spinlock/traction/app/api/base.rb	/^  class Base < Grape::API$/;"	c	language:Ruby	class:API
+Base	/Users/spinlock/traction/app/api/v1/base.rb	/^    class Base < Grape::API$/;"	c	language:Ruby	class:API.V1
+Base	/Users/spinlock/traction/app/controllers/api/base.rb	/^  class Base < Grape::API$/;"	c	language:Ruby	class:API
+Base	/Users/spinlock/traction/app/controllers/api/v1/base.rb	/^    class Base < Grape::API$/;"	c	language:Ruby	class:API.V1
+base64_amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^    $base64_amount   = base64_encode( $amount );$/;"	v	language:PHP
+base64_amount	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^    $base64_amount   = base64_encode( $amount );$/;"	v	language:PHP
+billing_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_address_city     = $params['billing_address_city'];$/;"	v	language:PHP
+billing_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_address_city;$/;"	v	language:PHP
+billing_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $billing_address_city   = $customer->billing_address_city;$/;"	v	language:PHP
+billing_address_country	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_address_country  = $params['billing_address_country'];$/;"	v	language:PHP
+billing_address_country	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_address_country;$/;"	v	language:PHP
+billing_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_address_line_1   = $params['billing_address_line_1'];$/;"	v	language:PHP
+billing_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_address_line_1;$/;"	v	language:PHP
+billing_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $billing_address_line_1 = $customer->billing_address_line_1;$/;"	v	language:PHP
+billing_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_address_state    = $params['billing_address_state'];$/;"	v	language:PHP
+billing_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_address_state;$/;"	v	language:PHP
+billing_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $billing_address_state  = $customer->billing_address_state;$/;"	v	language:PHP
+billing_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_address_zip      = $params['billing_address_zip'];$/;"	v	language:PHP
+billing_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_address_zip;$/;"	v	language:PHP
+billing_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $billing_address_zip    = $customer->billing_address_zip;$/;"	v	language:PHP
+billing_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->billing_name             = $params['billing_name'];$/;"	v	language:PHP
+billing_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $billing_name;$/;"	v	language:PHP
+billing_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $billing_name           = $customer->billing_name;$/;"	v	language:PHP
+BinarySearch	/Users/spinlock/code_katas/binary_search-2014-02-26-161359/lib/binary_search.rb	/^class BinarySearch$/;"	c	language:Ruby
+BinarySearch	/Users/spinlock/code_katas/binary_search-2014-03-20-134428/lib/binary_search.rb	/^class BinarySearch$/;"	c	language:Ruby
+BinarySearch	/Users/spinlock/code_katas/binary_search-2014-03-21-120950/lib/binary_search.rb	/^class BinarySearch$/;"	c	language:Ruby
+binary_search	/Users/spinlock/code_katas/binary_search-2014-02-26-161359/lib/binary_search.rb	/^  def binary_search(target, data)$/;"	f	language:Ruby	class:BinarySearch
+binary_search	/Users/spinlock/code_katas/binary_search-2014-03-21-120950/lib/binary_search.rb	/^  def binary_search(target, data)$/;"	f	language:Ruby	class:BinarySearch
+blog_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->blog_description = $blog_description;$/;"	v	language:PHP
+blog_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $blog_description;$/;"	v	language:PHP
+blog_type	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			$blog_type = $options['blog_type'];$/;"	v	language:PHP
+blog_type	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			<?php  if($blog_type == 'std-blog-sidebar' || $blog_type == 'masonry-blog-sidebar') { ?>$/;"	v	language:PHP
+blog_type	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			if($blog_type == 'masonry-blog-sidebar' || $blog_type == 'masonry-blog-fullwidth') {$/;"	v	language:PHP
+blog_type	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			if($blog_type == 'std-blog-sidebar' || $blog_type == 'masonry-blog-sidebar'){$/;"	v	language:PHP
+blog_type	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			if($blog_type == null) $blog_type = 'std-blog-sidebar';$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $body = STRIPE_BASE_DIR . '\/app\/view\/email\/receipt.php';$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $body            = STRIPE_BASE_DIR . '\/app\/view\/email\/order.php';$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $this->body                     = $params['body'];$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $body;$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $body    = STRIPE_BASE_DIR . '\/app\/view\/email\/order.php';$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $body    = STRIPE_BASE_DIR . '\/app\/view\/email\/receipt.php';$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->body                     = $params['body'];$/;"	v	language:PHP
+body	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $body;$/;"	v	language:PHP
+bsearch	/Users/spinlock/code_katas/binary_search-2014-03-20-134428/lib/binary_search.rb	/^  def bsearch(target, data)$/;"	f	language:Ruby	class:BinarySearch
+bsearch	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^  def bsearch(target, a)$/;"	f	language:Ruby	class:Pairs
+build_params	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def build_params(track_ids=[0])$/;"	f	language:Ruby	class:USPS.TrackRequest
+build_tree	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def build_tree(type = 'ruby')$/;"	f	language:Ruby	class:Kata.Setup.Base
+Canvas	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^	function Canvas(settings)$/;"	c	language:JavaScript
+Canvas.callFunc	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		callFunc: function(e, $this, event)$/;"	m	language:JavaScript
+Canvas.drawEllipseMove	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawEllipseMove: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawEraserDown	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawEraserDown: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawEraserMove	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawEraserMove: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawEraserUp	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawEraserUp: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawLineMove	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawLineMove: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawPencilUp	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawPencilUp: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawRectangleMove	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawRectangleMove: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawShapeDown	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawShapeDown: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawShapeMove	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawShapeMove: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawShapeUp	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawShapeUp: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawTextDown	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawTextDown: function(e, $this)$/;"	m	language:JavaScript
+Canvas.drawTextUp	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		drawTextUp: function(e, $this)$/;"	m	language:JavaScript
+Canvas.generate	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		generate: function(width, height)$/;"	m	language:JavaScript
+Canvas.generateTemp	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		generateTemp: function()$/;"	m	language:JavaScript
+Canvas.generateTextInput	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		generateTextInput: function()$/;"	m	language:JavaScript
+Canvas.getImage	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		getImage: function()$/;"	m	language:JavaScript
+Canvas.setImage	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		setImage: function(data)$/;"	m	language:JavaScript
+CashRegister	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^class CashRegister$/;"	c	language:Ruby
+CashRegister	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^class CashRegister$/;"	c	language:Ruby
+CashRegister	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/cashregister.rb	/^class CashRegister$/;"	c	language:Ruby
+CashRegister	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^class CashRegister$/;"	c	language:Ruby
+CashRegister	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/cashregister.rb	/^class CashRegister$/;"	c	language:Ruby
+CashRegister	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^class CashRegister$/;"	c	language:Ruby
+caught_exception	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^        $caught_exception = true;$/;"	v	language:PHP
+Change	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^class Change < Hash$/;"	c	language:Ruby	class:CashRegister
+Change	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^class Change < Hash$/;"	c	language:Ruby	class:CashRegister.coins=
+Change	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/change.rb	/^class Change < Hash$/;"	c	language:Ruby
+Change	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/change.rb	/^class Change < Hash$/;"	c	language:Ruby
+Change	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/change.rb	/^class Change < Hash$/;"	c	language:Ruby
+Change	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^class Change < Hash$/;"	c	language:Ruby
+change	/Users/spinlock/easy_post/easypost-sample-tracker/db/migrate/20140305232727_devise_create_users.rb	/^  def change$/;"	f	language:Ruby	class:DeviseCreateUsers
+change	/Users/spinlock/easy_post/easypost-sample-tracker/db/migrate/20140306035040_create_packages.rb	/^  def change$/;"	f	language:Ruby	class:CreatePackages
+change	/Users/spinlock/rails/katas/2.2.14/school/db/migrate/20140202215922_create_teachers.rb	/^  def change$/;"	f	language:Ruby	class:CreateTeachers
+change	/Users/spinlock/traction/db/migrate/20151025233323_add_screen_shot_to_web_sites.rb	/^  def change$/;"	f	language:Ruby	class:AddScreenShotToWebSites
+charge	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $charge = Stripe_Charge::create($/;"	v	language:PHP
+charge	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $charge = Stripe_Charge::create($/;"	v	language:PHP
+checkout	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^$checkout = new CheckoutController;$/;"	v	language:PHP
+CheckoutController	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^class CheckoutController extends Controller$/;"	c	language:PHP
+check_return_code	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def check_return_code(response)$/;"	f	language:Ruby	class:USPS.TrackRequest
+client	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def client$/;"	f	language:Ruby	class:Kata.Setup.Base
+client	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^      $client = new Services_Twilio($/;"	v	language:PHP
+close	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function close() {$/;"	f	language:PHP
+code	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $code  = $_GET['code'];$/;"	v	language:PHP
+coins=	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def coins=(coins=[25,10,5,1])$/;"	f	language:Ruby	class:CashRegister
+coins=	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/cashregister.rb	/^  def coins= (coins = [25,10,5,1])$/;"	f	language:Ruby	class:CashRegister
+coins=	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^  def coins=(coins)$/;"	f	language:Ruby	class:CashRegister
+coins=	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/cashregister.rb	/^  def coins=(coins=[25,10,5,1])$/;"	f	language:Ruby	class:CashRegister
+COMMAND_CENTER_DIR	/Users/spinlock/WordPress/Plugins/press-pay-command-center/press-pay-command-center.php	/^  define('COMMAND_CENTER_DIR', dirname(__FILE__));$/;"	d	language:PHP
+COMMAND_CENTER_URL	/Users/spinlock/WordPress/Plugins/press-pay-command-center/press-pay-command-center.php	/^  define('COMMAND_CENTER_URL', plugin_dir_url(__FILE__));$/;"	d	language:PHP
+compliments	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^  def compliments(k, a, element)$/;"	f	language:Ruby	class:Pairs
+connect_link	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $connect_link = "<a href={$href} class='stripe-connect'><span>Connect with Stripe<\/span><\/a>";$/;"	v	language:PHP
+content	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^  public function route( $shortcode_attributes, $content = null ) {$/;"	v	language:PHP
+content	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function route($shortcode_attributes, $content=null) {$/;"	v	language:PHP
+content	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^  public function route( $shortcode_attributes, $content = null ) {$/;"	v	language:PHP
+Controller	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^class Controller extends Mixer$/;"	c	language:PHP
+copy_get_vars	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private function copy_get_vars(){$/;"	f	language:PHP
+copy_post_vars	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  private function copy_post_vars() {$/;"	f	language:PHP
+copy_post_vars	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private function copy_post_vars(){$/;"	f	language:PHP
+count	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def count$/;"	f	language:Ruby	class:CashRegister.coins=.Change.value
+count	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/change.rb	/^  def count$/;"	f	language:Ruby	class:Change
+count_coins	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/change.rb	/^  def count_coins$/;"	f	language:Ruby	class:Change
+count_coins	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/change.rb	/^  def count_coins$/;"	f	language:Ruby	class:Change
+coupon	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	      $coupon = Stripe_Coupon::retrieve( trim( $_POST['discount'] ) );$/;"	v	language:PHP
+create	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def create$/;"	f	language:Ruby	class:PackagesController
+create	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def create$/;"	f	language:Ruby	class:PostsController
+create	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/teachers_controller.rb	/^  def create$/;"	f	language:Ruby	class:TeachersController
+create	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def create$/;"	f	language:Ruby	class:StudentsController
+create	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def create$/;"	f	language:Ruby	class:TeachersController
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $this->created_at               = $params['created_at'];$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $created_at;$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->created_at               = $params['created_at'];$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $created_at;$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->created_at               = $params['created_at'];$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $created_at;$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->created_at            = $params['created_at'];$/;"	v	language:PHP
+created_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $created_at;$/;"	v	language:PHP
+CreatePackages	/Users/spinlock/easy_post/easypost-sample-tracker/db/migrate/20140306035040_create_packages.rb	/^class CreatePackages < ActiveRecord::Migration$/;"	c	language:Ruby
+CreateTeachers	/Users/spinlock/rails/katas/2.2.14/school/db/migrate/20140202215922_create_teachers.rb	/^class CreateTeachers < ActiveRecord::Migration$/;"	c	language:Ruby
+create_remote_repo	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def create_remote_repo$/;"	f	language:Ruby	class:Kata.Setup.Base
+create_repo	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def create_repo options$/;"	f	language:Ruby	class:Kata.Setup.Base
+create_session_token	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def create_session_token$/;"	f	language:Ruby	class:Kata.Setup.Base
+cu	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$cu = Stripe_Customer::retrieve( $customer_id );$/;"	v	language:PHP
+curl	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^  private function curl($args = array()) {$/;"	f	language:PHP
+curl_handle	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $curl_handle = curl_init();$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$customer = Stripe_Customer::create($/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^      $customer = new PressPayCustomer( array($/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^	    $customer = Stripe_Customer::create(array('card' => $this->token));	$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^        $customer = Stripe_Customer::create();$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^        $customer = Stripe_Customer::retrieve($invoice->customer);$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $customer = new PressPayCustomer( array($/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $customer = $wpdb->get_row($/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $customer = $wpdb->get_row($/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $customer    = PressPayCustomer::find($this->press_pay_customer_id);$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $customer    = PressPayCustomer::find_by_stripe_customer_id($event->data->object->customer);$/;"	v	language:PHP
+customer	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $customer = new PressPayCustomer( array($/;"	v	language:PHP
+customer_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  protected $customer_email;$/;"	v	language:PHP
+customer_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->customer_email = $customer->email;$/;"	v	language:PHP
+customer_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->customer_email = $_POST['email'];$/;"	v	language:PHP
+customer_email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $customer_email = $customer->email;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$customer_id = $customer->id;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$customer_id = false;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$customer_id = get_user_meta( get_current_user_id(), '_stripe_customer_id', true );$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^	    $this->customer_id = $customer->id;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^        $this->customer_id = $customer->id;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->customer_id = $id;$/;"	v	language:PHP
+customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $customer_id;$/;"	v	language:PHP
+customer_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $customer_name  = $customer->billing_name;$/;"	v	language:PHP
+data	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^    $data = @file_get_contents('php:\/\/input');$/;"	v	language:PHP
+data	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $data = array($/;"	v	language:PHP
+data	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $data = array($/;"	v	language:PHP
+data	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $data = array($/;"	v	language:PHP
+data	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $data = array($/;"	v	language:PHP
+data=	/Users/spinlock/code_katas/binary_search-2014-03-21-120950/lib/binary_search.rb	/^  def data=(data)$/;"	f	language:Ruby	class:BinarySearch
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^      $db_status          = $wpdb->insert( PRESS_PAY_EMAIL_TABLE, $data );$/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^      $db_status = $wpdb->update($/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^        $db_status = $wpdb->insert(PRESS_PAY_CUSTOMER_TABLE, $data);$/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^        $db_status = $wpdb->update(PRESS_PAY_CUSTOMER_TABLE, $data, array('id' => $this->id));$/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $db_status          = $wpdb->insert( PRESS_PAY_EMAIL_TABLE, $data );$/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $db_status = $wpdb->update($/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^        $db_status          = $wpdb->insert( PRESS_PAY_TRANSACTION_TABLE, $data );$/;"	v	language:PHP
+db_status	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^        $db_status = $wpdb->update($/;"	v	language:PHP
+debug	/Users/spinlock/WordPress/Plugins/press-pay/app/model/debug.model.php	/^    public function debug($message){$/;"	f	language:PHP
+DebugModel	/Users/spinlock/WordPress/Plugins/press-pay/app/model/debug.model.php	/^   * class DebugModel                                                        *$/;"	c	language:PHP
+DebugModel	/Users/spinlock/WordPress/Plugins/press-pay/app/model/debug.model.php	/^  class DebugModel{$/;"	c	language:PHP
+Defaults	/Users/spinlock/traction/app/api/v1/defaults.rb	/^    module Defaults$/;"	m	language:Ruby	class:API.V1
+DEFAULTS.calibrateX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    calibrateX: false,$/;"	p	language:JavaScript
+DEFAULTS.calibrateX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    calibrateX: false,$/;"	p	language:JavaScript
+DEFAULTS.calibrateY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    calibrateY: true,$/;"	p	language:JavaScript
+DEFAULTS.calibrateY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    calibrateY: true,$/;"	p	language:JavaScript
+DEFAULTS.calibrationDelay	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    calibrationDelay: 500,$/;"	p	language:JavaScript
+DEFAULTS.calibrationDelay	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    calibrationDelay: 500,$/;"	p	language:JavaScript
+DEFAULTS.calibrationThreshold	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    calibrationThreshold: 100,$/;"	p	language:JavaScript
+DEFAULTS.calibrationThreshold	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    calibrationThreshold: 100,$/;"	p	language:JavaScript
+DEFAULTS.invertX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    invertX: true,$/;"	p	language:JavaScript
+DEFAULTS.invertX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    invertX: true,$/;"	p	language:JavaScript
+DEFAULTS.invertY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    invertY: true,$/;"	p	language:JavaScript
+DEFAULTS.invertY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    invertY: true,$/;"	p	language:JavaScript
+DEFAULTS.limitX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    limitX: false,$/;"	p	language:JavaScript
+DEFAULTS.limitX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    limitX: false,$/;"	p	language:JavaScript
+DEFAULTS.limitY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    limitY: false,$/;"	p	language:JavaScript
+DEFAULTS.limitY	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    limitY: false,$/;"	p	language:JavaScript
+DEFAULTS.scalarX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    scalarX: 10.0,$/;"	p	language:JavaScript
+DEFAULTS.scalarX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    scalarX: 10.0,$/;"	p	language:JavaScript
+DEFAULTS.supportDelay	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^    supportDelay: 500,$/;"	p	language:JavaScript
+DEFAULTS.supportDelay	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^    supportDelay: 500,$/;"	p	language:JavaScript
+default_vals	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $default_vals = array($/;"	v	language:PHP
+default_vals	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $default_vals = array($/;"	v	language:PHP
+default_vals	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $default_vals = array($/;"	v	language:PHP
+default_vals	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $default_vals = array($/;"	v	language:PHP
+description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->description = $description;$/;"	v	language:PHP
+description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $description;$/;"	v	language:PHP
+description	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $description    = $this->description;$/;"	v	language:PHP
+description	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->description              = $params['description'];$/;"	v	language:PHP
+description	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $description;$/;"	v	language:PHP
+destroy	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def destroy$/;"	f	language:Ruby	class:PackagesController
+destroy	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def destroy$/;"	f	language:Ruby	class:PostsController
+destroy	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def destroy$/;"	f	language:Ruby	class:TeachersController
+Deviation	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^class Deviation$/;"	c	language:Ruby
+DeviseCreateUsers	/Users/spinlock/easy_post/easypost-sample-tracker/db/migrate/20140305232727_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c	language:Ruby
+drop_table	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_customers.php	/^    private function drop_table() {$/;"	f	language:PHP
+drop_table	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_emails.php	/^    private function drop_table() {$/;"	f	language:PHP
+drop_table	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_transactions.php	/^    private function drop_table() {$/;"	f	language:PHP
+EasypostSampleTracker	/Users/spinlock/easy_post/easypost-sample-tracker/config/application.rb	/^module EasypostSampleTracker$/;"	m	language:Ruby
+edit	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def edit$/;"	f	language:Ruby	class:PostsController
+edit	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def edit$/;"	f	language:Ruby	class:StudentsController
+edit	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def edit$/;"	f	language:Ruby	class:TeachersController
+email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	    $email = new EmailController();$/;"	v	language:PHP
+email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^        $email = $customer->email;$/;"	v	language:PHP
+email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $email = new PressPayEmail($/;"	v	language:PHP
+email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->email                    = $params['email'];$/;"	v	language:PHP
+email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $email;$/;"	v	language:PHP
+email	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $email = new PressPayEmail($/;"	v	language:PHP
+EmailController	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^class EmailController extends Controller$/;"	c	language:PHP
+EmailModel	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^class EmailModel{$/;"	c	language:PHP
+email_order_to_admin	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private function email_order_to_admin() {$/;"	f	language:PHP
+email_receipt_to_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private function email_receipt_to_customer(){$/;"	f	language:PHP
+EmberApp	/Users/spinlock/todo-firebase/ember-cli-build.js	/^var EmberApp = require('ember-cli\/lib\/broccoli\/ember-app');$/;"	v	language:JavaScript
+encrypt	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def encrypt(string)$/;"	f	language:Ruby	class:User
+encrypt_password	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def encrypt_password$/;"	f	language:Ruby	class:User
+Equi	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/test_spec.rb	/^class Equi$/;"	c	language:Ruby
+event	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $event = Stripe_Event::retrieve($event_id);$/;"	v	language:PHP
+event	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public function event( $event ) {$/;"	f	language:PHP
+extract_status	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def extract_status(response, track_id)$/;"	f	language:Ruby	class:USPS.TrackRequest
+feed	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def feed$/;"	f	language:Ruby	class:User
+find	/Users/spinlock/code_katas/binary_search-2014-02-26-161359/lib/binary_search.rb	/^  def find(target)$/;"	f	language:Ruby	class:BinarySearch
+find	/Users/spinlock/code_katas/binary_search-2014-03-20-134428/lib/binary_search.rb	/^  def find(target)$/;"	f	language:Ruby	class:BinarySearch
+find	/Users/spinlock/code_katas/binary_search-2014-03-21-120950/lib/binary_search.rb	/^  def find(target)$/;"	f	language:Ruby	class:BinarySearch
+find	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public function find($id) {$/;"	f	language:PHP
+find	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public function find($id) {$/;"	f	language:PHP
+find_by_stripe_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public function find_by_stripe_customer_id( $stripe_customer_id ) {$/;"	f	language:PHP
+first_find	/Users/spinlock/code_katas/binary_search-2014-03-20-134428/lib/binary_search.rb	/^  def first_find(target)$/;"	f	language:Ruby	class:BinarySearch
+follow!	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def follow!(followed)$/;"	f	language:Ruby	class:User
+followed_by	/Users/spinlock/rails/haiku/app/models/micropost.rb	/^  def self.followed_by(user)$/;"	F	language:Ruby	class:Micropost
+following?	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def following?(followed)$/;"	f	language:Ruby	class:User
+Formidable	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^  class Formidable {$/;"	c	language:PHP
+g:rspec_command	/Users/spinlock/.vimrc	/^let g:rspec_command = "!rspec --format documentation --color --drb {spec}"$/;"	v	language:Vim
+get	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^  public function get() {$/;"	f	language:PHP
+get	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^  public function get( $shortcode_attributes ) {$/;"	f	language:PHP
+get	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function get($shortcode_attributes) {$/;"	f	language:PHP
+get	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^  public function get( $shortcode_attributes ) {$/;"	f	language:PHP
+get_admin_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function get_admin_email()$/;"	f	language:PHP
+get_amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_amount()$/;"	f	language:PHP
+get_billing_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_billing_city(){$/;"	f	language:PHP
+get_billing_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^   public function get_billing_line1(){$/;"	f	language:PHP
+get_billing_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^   public function get_billing_state(){$/;"	f	language:PHP
+get_billing_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_billing_zip(){$/;"	f	language:PHP
+get_blog_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_blog_description()$/;"	f	language:PHP
+get_customer_email	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_customer_email()$/;"	f	language:PHP
+get_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_customer_id(){$/;"	f	language:PHP
+get_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_description()$/;"	f	language:PHP
+get_headline	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_headline()$/;"	f	language:PHP
+get_image	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_image()$/;"	f	language:PHP
+get_last4	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_last4()$/;"	f	language:PHP
+get_name	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_name()$/;"	f	language:PHP
+get_optimal_change	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/cashregister.rb	/^  def get_optimal_change(optimal_change, amount, coins)$/;"	f	language:Ruby	class:CashRegister
+get_optimal_change	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^  def get_optimal_change(amount)$/;"	f	language:Ruby	class:CashRegister
+get_optimal_change	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/cashregister.rb	/^  def get_optimal_change(amount)$/;"	f	language:Ruby	class:CashRegister
+get_options	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_options()$/;"	f	language:PHP
+get_post_vars	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  private function get_post_vars(){$/;"	f	language:PHP
+get_product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_product_id()$/;"	f	language:PHP
+get_shipping_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function get_shipping_city(){$/;"	f	language:PHP
+get_shipping_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function get_shipping_line1(){$/;"	f	language:PHP
+get_shipping_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^   public function get_shipping_state(){$/;"	f	language:PHP
+get_shipping_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function get_shipping_zip(){$/;"	f	language:PHP
+get_status	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def get_status(track_id)$/;"	f	language:Ruby	class:USPS.TrackRequest
+get_stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_stripe_customer()$/;"	f	language:PHP
+get_stripe_option	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_stripe_option( $key )$/;"	f	language:PHP
+get_stripe_plans	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  private function get_stripe_plans() {$/;"	f	language:PHP
+get_stripe_publishable_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^  public function get_stripe_publishable_key() {$/;"	f	language:PHP
+get_stripe_secret_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^  public function get_stripe_secret_key() {$/;"	f	language:PHP
+get_stripe_token	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function get_stripe_token()$/;"	f	language:PHP
+get_upgrade_server	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function get_upgrade_server()$/;"	f	language:PHP
+github	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def github$/;"	f	language:Ruby	class:Kata.Setup.Base
+group	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^      $group = $this->settings_string . "_group";$/;"	v	language:PHP
+has_password?	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def has_password?(submitted_password)$/;"	f	language:Ruby	class:User
+headers	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^        $headers = 'From: "' . html_entity_decode(get_bloginfo('name'))$/;"	v	language:PHP
+headline	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->headline = $headline;$/;"	v	language:PHP
+href	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $href = "https:\/\/connect.stripe.com\/oauth\/authorize?response_type=code&client_id=ca_38T6O1nnMRY3eoBzWlgd0oiZCfLqJ05K&scope=read_write&state=" . $permalink;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^      $this->id           = $wpdb->insert_id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^        $this->id = $wpdb->insert_id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->id                       = $params['id'];$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $id = false;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $id = false;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $this->id           = $wpdb->insert_id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^        $this->id           = $wpdb->insert_id;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->id                    = $params['id'];$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $id = false;$/;"	v	language:PHP
+id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $id = false;$/;"	v	language:PHP
+image	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->image = $image;$/;"	v	language:PHP
+image	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $image;$/;"	v	language:PHP
+includesController	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $includesController = new PressPayIncludesController;$/;"	v	language:PHP
+index	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def index$/;"	f	language:Ruby	class:PackagesController
+index	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/track_controller.rb	/^  def index$/;"	f	language:Ruby	class:TrackController
+index	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/users_controller.rb	/^  def index$/;"	f	language:Ruby	class:UsersController
+index	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def index$/;"	f	language:Ruby	class:PostsController
+index	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def index$/;"	f	language:Ruby	class:TeachersController
+initialize	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def initialize(kata_name = 'kata')$/;"	f	language:Ruby	class:Kata.Setup.Base
+initialize	/Users/spinlock/code_katas/binary_search-2014-03-20-134428/lib/binary_search.rb	/^  def initialize(data)$/;"	f	language:Ruby	class:BinarySearch
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def initialize(coins)$/;"	f	language:Ruby	class:CashRegister.Change
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def initialize(coins=[25,10,5,1])$/;"	f	language:Ruby	class:CashRegister
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def initialize(coins)$/;"	f	language:Ruby	class:CashRegister.coins=.Change
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/change.rb	/^  def initialize(coins)$/;"	f	language:Ruby	class:Change
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^  def initialize(args)$/;"	f	language:Ruby	class:CashRegister
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/change.rb	/^  def initialize(args)$/;"	f	language:Ruby	class:Change
+initialize	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/change.rb	/^  def initialize(coins)$/;"	f	language:Ruby	class:Change
+initialize	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def initialize(coins)$/;"	f	language:Ruby	class:Change
+initialize	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def initialize(coins=[25, 10, 5, 1])$/;"	f	language:Ruby	class:CashRegister
+initialize	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def initialize$/;"	f	language:Ruby	class:PackagesController
+initialize	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def initialize(params={})$/;"	f	language:Ruby	class:USPS.TrackRequest
+init_status	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def init_status(track_id)$/;"	f	language:Ruby	class:USPS.TrackRequest
+invoice	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$invoice = Stripe_Invoice::create( array($/;"	v	language:PHP
+invoice	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $invoice = $event->data->object;$/;"	v	language:PHP
+invoice_item	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  		$invoice_item = Stripe_InvoiceItem::create( array($/;"	v	language:PHP
+is_stripe_authenticated	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function is_stripe_authenticated(){$/;"	f	language:PHP
+is_test?	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def is_test?$/;"	f	language:Ruby	class:USPS
+Kata	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^module Kata$/;"	m	language:Ruby
+label	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function text($header, $key, $label='') {$/;"	v	language:PHP
+last4	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $last4  = $transaction->last4;$/;"	v	language:PHP
+last4	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->last4                 = $params['last4'];$/;"	v	language:PHP
+last4	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $last4;$/;"	v	language:PHP
+last_charge	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $last_charge = $this->get_last_charge($this);$/;"	v	language:PHP
+last_charge	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $last_charge     = $this->get_last_charge($this);$/;"	v	language:PHP
+listener	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^$listener = new PressPayStripeListener;$/;"	v	language:PHP
+ListenersController	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^class ListenersController {$/;"	c	language:PHP
+listener_controller	/Users/spinlock/WordPress/Plugins/press-pay-command-center/press-pay-command-center.php	/^$listener_controller = new ListenersController;$/;"	v	language:PHP
+load_scripts	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function load_scripts() {$/;"	f	language:PHP
+logger	/Users/spinlock/traction/app/api/v1/defaults.rb	/^          def logger$/;"	f	language:Ruby	class:API.V1.Defaults
+login	/Users/spinlock/rails/tech_validate/portrait/spec/spec_helper.rb	/^    def login(user)$/;"	f	language:Ruby
+login_as	/Users/spinlock/rails/tech_validate/portrait/spec/spec_helper.rb	/^    def login_as(username)$/;"	f	language:Ruby
+MAGIC_NUMBER	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  var MAGIC_NUMBER = 30;$/;"	v	language:JavaScript
+MAGIC_NUMBER	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  var MAGIC_NUMBER = 30;$/;"	v	language:JavaScript
+MainMenu	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^	function MainMenu()$/;"	c	language:JavaScript
+MainMenu.generate	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		generate: function(canvas, textMenu)$/;"	m	language:JavaScript
+MainMenu.moveTextMenu	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		moveTextMenu: function(mainMenu, textMenu)$/;"	m	language:JavaScript
+MainMenu.set_mode	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		set_mode: function($this, $canvas, mode)$/;"	m	language:JavaScript
+make_change	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def make_change(amount)$/;"	f	language:Ruby	class:CashRegister.initialize
+make_change	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def make_change(amount)$/;"	f	language:Ruby	class:CashRegister.coins=
+make_change	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/cashregister.rb	/^  def make_change(amount)$/;"	f	language:Ruby	class:CashRegister
+make_change	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^  def make_change(amount)$/;"	f	language:Ruby	class:CashRegister
+make_change	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/cashregister.rb	/^    def make_change(amount)$/;"	f	language:Ruby	class:CashRegister
+make_change	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def make_change(amount)$/;"	f	language:Ruby	class:CashRegister
+make_salt	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def make_salt$/;"	f	language:Ruby	class:User
+MarkovChain	/Users/spinlock/code_katas/markovchain.2.16.14/lib/markov_chain.rb	/^class MarkovChain$/;"	c	language:Ruby
+masonry_class	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^				$masonry_class = 'masonry';$/;"	v	language:PHP
+masonry_class	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			$masonry_class = null;$/;"	v	language:PHP
+menu_setup	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function menu_setup() {$/;"	f	language:PHP
+message	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^        $message = "Hello " . $customer_name . "\\n\\n";$/;"	v	language:PHP
+message	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $message = ob_get_clean();$/;"	v	language:PHP
+message	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $message = ob_get_clean();$/;"	v	language:PHP
+message	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $message = ob_get_clean();$/;"	v	language:PHP
+Micropost	/Users/spinlock/rails/haiku/app/models/micropost.rb	/^class Micropost < ActiveRecord::Base$/;"	c	language:Ruby
+migrate	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_customers.php	/^    public function migrate() {$/;"	f	language:PHP
+migrate	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_emails.php	/^    public function migrate() {$/;"	f	language:PHP
+migrate	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_transactions.php	/^    public function migrate() {$/;"	f	language:PHP
+module.exports	/Users/spinlock/todo-firebase/config/environment.js	/^module.exports = function(environment) {$/;"	f	language:JavaScript
+module.exports	/Users/spinlock/todo-firebase/ember-cli-build.js	/^module.exports = function(defaults) {$/;"	f	language:JavaScript
+module.exports.ENV.contentSecurityPolicy	/Users/spinlock/todo-firebase/config/environment.js	/^    contentSecurityPolicy: { 'connect-src': "'self' wss:\/\/*.firebaseio.com" },$/;"	p	language:JavaScript
+module.exports.ENV.environment	/Users/spinlock/todo-firebase/config/environment.js	/^    environment: environment,$/;"	p	language:JavaScript
+module.exports.ENV.modulePrefix	/Users/spinlock/todo-firebase/config/environment.js	/^    modulePrefix: 'todo-firebase',$/;"	p	language:JavaScript
+my_scripts_method	/Users/spinlock/WordPress/Plugins/paint-press/paint-press.php	/^  function my_scripts_method() { $/;"	f	language:PHP
+NAME	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  var NAME = 'parallax';$/;"	v	language:JavaScript
+NAME	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  var NAME = 'Parallax';$/;"	v	language:JavaScript
+name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function name() {$/;"	f	language:PHP
+new	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/user_controller.rb	/^  def new$/;"	f	language:Ruby	class:UserController
+new	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def new$/;"	f	language:Ruby	class:PostsController
+new	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/teachers_controller.rb	/^  def new$/;"	f	language:Ruby	class:TeachersController
+new	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def new$/;"	f	language:Ruby	class:StudentsController
+new	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def new$/;"	f	language:Ruby	class:TeachersController
+oauth_token_url	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $oauth_token_url = 'https:\/\/connect.stripe.com\/oauth\/token';$/;"	v	language:PHP
+open	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function open() {$/;"	f	language:PHP
+options	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^			<?php $options = get_option('salient'); $/;"	v	language:PHP
+Package	/Users/spinlock/easy_post/easypost-sample-tracker/app/models/package.rb	/^class Package < ActiveRecord::Base$/;"	c	language:Ruby
+Packages	/Users/spinlock/easy_post/easypost-sample-tracker/app/models/packages.rb	/^class Packages < ActiveRecord::Base$/;"	c	language:Ruby
+PackagesController	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^class PackagesController < ApplicationController$/;"	c	language:Ruby
+Pairs	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^class Pairs$/;"	c	language:Ruby
+Parallax	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  function Parallax(element, options) {$/;"	c	language:JavaScript
+Parallax.accelerate	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.accelerate = function(element) {$/;"	m	language:JavaScript
+Parallax.calibrate	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.calibrate = function(x, y) {$/;"	m	language:JavaScript
+Parallax.camelCase	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.camelCase = function(value) {$/;"	m	language:JavaScript
+Parallax.clamp	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.clamp = function(value, min, max) {$/;"	m	language:JavaScript
+Parallax.css	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.css = function(element, property, value) {$/;"	m	language:JavaScript
+Parallax.data	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.data = function(element, name) {$/;"	m	language:JavaScript
+Parallax.data.calibrateX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^      calibrateX: this.data(this.element, 'calibrate-x'),$/;"	p	language:JavaScript
+Parallax.deserialize	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.deserialize = function(value) {$/;"	m	language:JavaScript
+Parallax.desktop	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.desktop = !navigator.userAgent.match(\/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)\/i);$/;"	m	language:JavaScript
+Parallax.disable	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.disable = function() {$/;"	m	language:JavaScript
+Parallax.enable	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.enable = function() {$/;"	m	language:JavaScript
+Parallax.extend	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.extend = function() {$/;"	m	language:JavaScript
+Parallax.friction	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.friction = function(x, y) {$/;"	m	language:JavaScript
+Parallax.hh	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.hh = null;$/;"	m	language:JavaScript
+Parallax.hw	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.hw = null;$/;"	m	language:JavaScript
+Parallax.initialise	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.initialise = function() {$/;"	m	language:JavaScript
+Parallax.invert	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.invert = function(x, y) {$/;"	m	language:JavaScript
+Parallax.limit	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.limit = function(x, y) {$/;"	m	language:JavaScript
+Parallax.motionSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.motionSupport = !!window.DeviceMotionEvent;$/;"	m	language:JavaScript
+Parallax.offset	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.offset = function(element) {$/;"	m	language:JavaScript
+Parallax.onAnimationFrame	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onAnimationFrame = function() {$/;"	m	language:JavaScript
+Parallax.onCalibrationTimer	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onCalibrationTimer = function(event) {$/;"	m	language:JavaScript
+Parallax.onDeviceOrientation	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onDeviceOrientation = function(event) {$/;"	m	language:JavaScript
+Parallax.onMouseMove	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onMouseMove = function(event) {$/;"	m	language:JavaScript
+Parallax.onOrientationTimer	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onOrientationTimer = function(event) {$/;"	m	language:JavaScript
+Parallax.onWindowResize	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.onWindowResize = function(event) {$/;"	m	language:JavaScript
+Parallax.orientationStatus	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.orientationStatus = 0;$/;"	m	language:JavaScript
+Parallax.orientationSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.orientationSupport = !!window.DeviceOrientationEvent;$/;"	m	language:JavaScript
+Parallax.portrait	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.portrait = null;$/;"	m	language:JavaScript
+Parallax.queueCalibration	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.queueCalibration = function(delay) {$/;"	m	language:JavaScript
+Parallax.scalar	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.scalar = function(x, y) {$/;"	m	language:JavaScript
+Parallax.setPosition	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.setPosition = function(element, x, y) {$/;"	m	language:JavaScript
+Parallax.transform2DSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.transform2DSupport = Parallax.prototype.transformSupport('2D');$/;"	m	language:JavaScript
+Parallax.transform3DSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.transform3DSupport = Parallax.prototype.transformSupport('3D');$/;"	m	language:JavaScript
+Parallax.transformSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.transformSupport = function(value) {$/;"	m	language:JavaScript
+Parallax.updateDimensions	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.updateDimensions = function() {$/;"	m	language:JavaScript
+Parallax.vendors	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.vendors = [null,['-webkit-','webkit'],['-moz-','Moz'],['-o-','O'],['-ms-','ms']];$/;"	m	language:JavaScript
+Parallax.wh	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.wh = null;$/;"	m	language:JavaScript
+Parallax.ww	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/parallax.js	/^  Parallax.prototype.ww = null;$/;"	m	language:JavaScript
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $params = array_merge( $default_vals, $params );$/;"	v	language:PHP
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $params = array_merge( $default_vals, $params );$/;"	v	language:PHP
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public function __construct( $params = array() ) {$/;"	v	language:PHP
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $params = array_merge( $default_vals, $params );$/;"	v	language:PHP
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $params = array_merge( $default_vals, $params );$/;"	v	language:PHP
+params	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public function __construct( $params = array() ) {$/;"	v	language:PHP
+perform	/Users/spinlock/traction/app/workers/web_site_worker.rb	/^  def perform(rank, url)$/;"	f	language:Ruby	class:WebSiteWorker
+permalink	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $permalink = get_site_url();$/;"	v	language:PHP
+permalink	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $permalink = preg_replace("\/^http\/", "", $permalink);$/;"	v	language:PHP
+permitted_params	/Users/spinlock/traction/app/api/v1/defaults.rb	/^          def permitted_params$/;"	f	language:Ruby	class:API.V1.Defaults
+phrase=	/Users/spinlock/code_katas/piglatin-2014-02-18-112544/lib/piglatin.rb	/^  def phrase=(string)$/;"	f	language:Ruby	class:PigLatin
+phrase=	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/lib/piglatin.rb	/^  def phrase= string$/;"	f	language:Ruby	class:PigLatin
+phrase=	/Users/spinlock/code_katas/piglatin.2.3.14/piglatin.rb	/^  def phrase=(phrase)$/;"	f	language:Ruby	class:PigLatin
+PigLatin	/Users/spinlock/carbon5/pig_latin_spec.rb	/^class PigLatin$/;"	c	language:Ruby
+PigLatin	/Users/spinlock/code_katas/piglatin-2014-02-18-112544/lib/piglatin.rb	/^class PigLatin$/;"	c	language:Ruby
+PigLatin	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/lib/piglatin.rb	/^class PigLatin$/;"	c	language:Ruby
+PigLatin	/Users/spinlock/code_katas/piglatin.2.3.14/piglatin.rb	/^class PigLatin$/;"	c	language:Ruby
+pk_live	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $pk_live        = $response['stripe_publishable_key'];$/;"	v	language:PHP
+pk_test	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $pk_test = $response['stripe_publishable_key'];$/;"	v	language:PHP
+plans	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	  $plans = array();$/;"	v	language:PHP
+plans_data	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	  $plans_data = Stripe_Plan::all();$/;"	v	language:PHP
+plan_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	  $plan_id = strip_tags(trim($_POST['plan_id']));$/;"	v	language:PHP
+Plugin	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  function Plugin(element, options) {$/;"	c	language:JavaScript
+Plugin.accelerate	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.accelerate = function($element) {$/;"	m	language:JavaScript
+Plugin.calibrate	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.calibrate = function(x, y) {$/;"	m	language:JavaScript
+Plugin.clamp	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.clamp = function(value, min, max) {$/;"	m	language:JavaScript
+Plugin.css	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.css = function(element, property, value) {$/;"	m	language:JavaScript
+Plugin.data.calibrateX	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^      calibrateX: this.$context.data('calibrate-x') || null,$/;"	p	language:JavaScript
+Plugin.desktop	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.desktop = !navigator.userAgent.match(\/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)\/i);$/;"	m	language:JavaScript
+Plugin.disable	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.disable = function() {$/;"	m	language:JavaScript
+Plugin.enable	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.enable = function() {$/;"	m	language:JavaScript
+Plugin.friction	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.friction = function(x, y) {$/;"	m	language:JavaScript
+Plugin.hh	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.hh = null;$/;"	m	language:JavaScript
+Plugin.hw	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.hw = null;$/;"	m	language:JavaScript
+Plugin.initialise	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.initialise = function() {$/;"	m	language:JavaScript
+Plugin.invert	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.invert = function(x, y) {$/;"	m	language:JavaScript
+Plugin.limit	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.limit = function(x, y) {$/;"	m	language:JavaScript
+Plugin.motionSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.motionSupport = !!window.DeviceMotionEvent;$/;"	m	language:JavaScript
+Plugin.onAnimationFrame	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onAnimationFrame = function() {$/;"	m	language:JavaScript
+Plugin.onCalibrationTimer	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onCalibrationTimer = function(event) {$/;"	m	language:JavaScript
+Plugin.onDeviceOrientation	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onDeviceOrientation = function(event) {$/;"	m	language:JavaScript
+Plugin.onMouseMove	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onMouseMove = function(event) {$/;"	m	language:JavaScript
+Plugin.onOrientationTimer	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onOrientationTimer = function(event) {$/;"	m	language:JavaScript
+Plugin.onWindowResize	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.onWindowResize = function(event) {$/;"	m	language:JavaScript
+Plugin.orientationStatus	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.orientationStatus = 0;$/;"	m	language:JavaScript
+Plugin.orientationSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.orientationSupport = !!window.DeviceOrientationEvent;$/;"	m	language:JavaScript
+Plugin.portrait	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.portrait = null;$/;"	m	language:JavaScript
+Plugin.queueCalibration	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.queueCalibration = function(delay) {$/;"	m	language:JavaScript
+Plugin.scalar	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.scalar = function(x, y) {$/;"	m	language:JavaScript
+Plugin.setPosition	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.setPosition = function(element, x, y) {$/;"	m	language:JavaScript
+Plugin.transform2DSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.transform2DSupport = Plugin.prototype.transformSupport('2D');$/;"	m	language:JavaScript
+Plugin.transform3DSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.transform3DSupport = Plugin.prototype.transformSupport('3D');$/;"	m	language:JavaScript
+Plugin.transformSupport	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.transformSupport = function(value) {$/;"	m	language:JavaScript
+Plugin.updateDimensions	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.updateDimensions = function() {$/;"	m	language:JavaScript
+Plugin.vendors	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.vendors = [null,['-webkit-','webkit'],['-moz-','Moz'],['-o-','O'],['-ms-','ms']];$/;"	m	language:JavaScript
+Plugin.wh	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.wh = null;$/;"	m	language:JavaScript
+Plugin.ww	/Users/spinlock/rails/katas/2.2.14/school/app/assets/javascripts/jquery.parallax.js	/^  Plugin.prototype.ww = null;$/;"	m	language:JavaScript
+Post	/Users/spinlock/rails/katas/1.31.14/school/app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c	language:Ruby
+post	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^  public function post()$/;"	f	language:PHP
+post	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^  public function post() {$/;"	f	language:PHP
+post	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function post() {$/;"	f	language:PHP
+post	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^  public function post() {$/;"	f	language:PHP
+PostsController	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	c	language:Ruby
+post_fields	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $post_fields = "adminEmail=" . $controller->get_admin_email() . "&"$/;"	v	language:PHP
+post_params	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def post_params$/;"	f	language:Ruby	class:PostsController
+post_payment_to_remote	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function post_payment_to_remote( $controller )$/;"	f	language:PHP
+PressPayCustomer	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^  class PressPayCustomer {$/;"	c	language:PHP
+PressPayEmail	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^class PressPayEmail {$/;"	c	language:PHP
+PressPaySettings	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^class PressPaySettings {$/;"	c	language:PHP
+PressPayShortcodeController	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^class PressPayShortcodeController {$/;"	c	language:PHP
+PressPayShortcodeController	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^class PressPayShortcodeController {$/;"	c	language:PHP
+PressPayTransaction	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^  class PressPayTransaction {$/;"	c	language:PHP
+PressPayUpgradeListener	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^<?php class PressPayUpgradeListener {$/;"	c	language:PHP
+presspay_mail_content_type	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function presspay_mail_content_type() {$/;"	f	language:PHP
+presspay_mail_content_type	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function presspay_mail_content_type() {$/;"	f	language:PHP
+presspay_mail_from	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function presspay_mail_from() {$/;"	f	language:PHP
+presspay_mail_from_name	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function presspay_mail_from_name() {$/;"	f	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $this->press_pay_customer_id    = $params['press_pay_customer_id'];$/;"	v	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $press_pay_customer_id;$/;"	v	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->press_pay_customer_id    = $params['press_pay_customer_id'];$/;"	v	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $press_pay_customer_id;$/;"	v	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->press_pay_customer_id = $params['press_pay_customer_id'];$/;"	v	language:PHP
+press_pay_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $press_pay_customer_id;$/;"	v	language:PHP
+PRESS_PAY_CUSTOMER_TABLE	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  define( 'PRESS_PAY_CUSTOMER_TABLE', $wpdb->prefix . 'press_pay_customers' );$/;"	d	language:PHP
+press_pay_db_version	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/migrate.php	/^  $press_pay_db_version = "1.19";$/;"	v	language:PHP
+press_pay_email	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $press_pay_email = str_replace('admin', 'press-pay', $admin_email);$/;"	v	language:PHP
+PRESS_PAY_EMAIL_TABLE	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  define('PRESS_PAY_EMAIL_TABLE', $wpdb->prefix . 'press_pay_emails');$/;"	d	language:PHP
+press_pay_migrate_database	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/migrate.php	/^function press_pay_migrate_database() {$/;"	f	language:PHP
+press_pay_transaction_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $this->press_pay_transaction_id = $params['press_pay_transaction_id'];$/;"	v	language:PHP
+press_pay_transaction_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $press_pay_transaction_id;$/;"	v	language:PHP
+press_pay_transaction_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->press_pay_transaction_id = $params['press_pay_transaction_id'];$/;"	v	language:PHP
+press_pay_transaction_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $press_pay_transaction_id;$/;"	v	language:PHP
+PRESS_PAY_TRANSACTION_TABLE	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  define( 'PRESS_PAY_TRANSACTION_TABLE', $wpdb->prefix . 'press_pay_transactions' );$/;"	d	language:PHP
+process	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def process$/;"	f	language:Ruby	class:USPS.TrackRequest
+product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->product_id = $product_id;$/;"	v	language:PHP
+product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $product_id;$/;"	v	language:PHP
+product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $product_id     = $this->product_id;$/;"	v	language:PHP
+product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->product_id               = $params['product_id'];$/;"	v	language:PHP
+product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $product_id;$/;"	v	language:PHP
+prune_keys	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def prune_keys(new_key)$/;"	f	language:Ruby	class:USPS.TrackRequest
+publishable_key	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^    $publishable_key = PressPaySettings::get_stripe_publishable_key();$/;"	v	language:PHP
+publishable_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^      $publishable_key = $stripe_options['test_mode']$/;"	v	language:PHP
+publishable_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^      $publishable_key = $stripe_options['test_mode']$/;"	v	language:PHP
+publishable_key	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^    $publishable_key = PressPaySettings::get_stripe_publishable_key();$/;"	v	language:PHP
+push_local_repo	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def push_local_repo(new_repo)$/;"	f	language:Ruby	class:Kata.Setup.Base
+quick_add	/Users/spinlock/traction/app/admin/web_site.rb	/^    def quick_add$/;"	f	language:Ruby
+quick_create	/Users/spinlock/traction/app/admin/web_site.rb	/^    def quick_create$/;"	f	language:Ruby
+radio	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function radio($header, $key, $label1, $label2) {$/;"	f	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	    $this->redirect = add_query_arg($/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^	    $this->redirect = add_query_arg('payment', 'failed', $_POST['redirect']);$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  	  $this->redirect = add_query_arg('payment', 'failed', $_POST['redirect']);$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  	  $this->redirect = add_query_arg('payment', 'paid', $_POST['redirect']);$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^    $this->redirect = $_POST['redirect'];$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public $redirect = 'none';$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public $redirect = 'none';$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^    $redirect        = get_permalink();$/;"	v	language:PHP
+redirect	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^    $redirect        = get_permalink();$/;"	v	language:PHP
+redirect_if_package_exists	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def redirect_if_package_exists(user_id, tracking_id)$/;"	f	language:Ruby	class:PackagesController
+refresh_token	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $refresh_token  = $response['refresh_token'];$/;"	v	language:PHP
+register_settings	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function register_settings() {$/;"	f	language:PHP
+remote_response	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $this->remote_response = $remote_response;$/;"	v	language:PHP
+remote_response	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  private $remote_response;$/;"	v	language:PHP
+render_options_page	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function render_options_page() {$/;"	f	language:PHP
+repo_name=	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^      def repo_name=(kata_name)$/;"	f	language:Ruby	class:Kata.Setup.Base
+request	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $request = curl_init($args['url']);$/;"	v	language:PHP
+response	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $response = $this->curl(array($/;"	v	language:PHP
+response	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $response     = json_decode(curl_exec($request), true);$/;"	v	language:PHP
+response	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $response = $this->curl(array($/;"	v	language:PHP
+response	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $response = $this->curl(array($/;"	v	language:PHP
+responseCode	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $responseCode = curl_getinfo($request, CURLINFO_HTTP_CODE);$/;"	v	language:PHP
+response_info	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $this->response_info = $response_info;$/;"	v	language:PHP
+response_info	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  private $response_info;$/;"	v	language:PHP
+route	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^  public function route() {$/;"	f	language:PHP
+route	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^  public function route() {$/;"	f	language:PHP
+route	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^  public function route( $shortcode_attributes, $content = null ) {$/;"	f	language:PHP
+route	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function route($shortcode_attributes, $content=null) {$/;"	f	language:PHP
+route	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^  public function route( $shortcode_attributes, $content = null ) {$/;"	f	language:PHP
+Router	/Users/spinlock/todo-firebase/app/router.js	/^var Router = Ember.Router.extend({$/;"	v	language:JavaScript
+running	/Users/spinlock/rails/tech_validate/portrait/spec/spec_helper.rb	/^    def running(&block)$/;"	f	language:Ruby
+save	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public function save() {$/;"	f	language:PHP
+save	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public function save() {$/;"	f	language:PHP
+save	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function save() {$/;"	f	language:PHP
+save	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public function save() {$/;"	f	language:PHP
+save_stripe_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function save_stripe_customer_id( $user_id ) {$/;"	f	language:PHP
+secret_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^      $secret_key = $stripe_options['test_mode']$/;"	v	language:PHP
+secret_key	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^      $secret_key = $stripe_options['test_mode']$/;"	v	language:PHP
+secure_hash	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def secure_hash(string)$/;"	f	language:Ruby	class:User
+send	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function send($params = array()) {$/;"	f	language:PHP
+send_emails	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function send_emails($customer, $transaction, $product_id, $description){$/;"	f	language:PHP
+send_event_receipt	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  function send_event_receipt($event_id){$/;"	f	language:PHP
+settings	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^      $this->settings = get_option($settings_string);$/;"	v	language:PHP
+settings	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    protected $settings;$/;"	v	language:PHP
+settings_controller	/Users/spinlock/WordPress/Plugins/press-pay-command-center/press-pay-command-center.php	/^  $settings_controller = new CommandCenterSettingsController;$/;"	v	language:PHP
+settings_link	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^function settings_link($links) {$/;"	f	language:PHP
+settings_string	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^      $this->settings_string = $settings_string;$/;"	v	language:PHP
+settings_string	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    protected $settings_string = "";$/;"	v	language:PHP
+settings_string	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    protected $settings_string = "";$/;"	v	language:PHP
+Setup	/Users/spinlock/.rvm/gems/ruby-2.1.0@code_katas/gems/kata-1.4.0/lib/kata/setup/base.rb	/^  module Setup$/;"	m	language:Ruby	class:Kata
+set_amount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_amount( $amount )$/;"	f	language:PHP
+set_blog_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_blog_description( $blog_description )$/;"	f	language:PHP
+set_customer_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_customer_id( $id )$/;"	f	language:PHP
+set_description	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_description( $description )$/;"	f	language:PHP
+set_headline	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_headline( $headline )$/;"	f	language:PHP
+set_image	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_image( $image )$/;"	f	language:PHP
+set_option	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_option( $key, $value )$/;"	f	language:PHP
+set_product_id	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_product_id( $product_id )$/;"	f	language:PHP
+set_remote_response	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function set_remote_response( $remote_response )$/;"	f	language:PHP
+set_response_info	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function set_response_info( $response_info )$/;"	f	language:PHP
+set_stripeToken	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_stripeToken( $stripeToken )$/;"	f	language:PHP
+set_stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function set_stripe_customer( $stripe_customer )$/;"	f	language:PHP
+set_student	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def set_student$/;"	f	language:Ruby	class:StudentsController
+set_teacher	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^    def set_teacher$/;"	f	language:Ruby	class:TeachersController
+set_tracking_response	/Users/spinlock/easy_post/easypost-sample-tracker/app/models/package.rb	/^  def set_tracking_response$/;"	f	language:Ruby	class:Package
+shipping_address	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $this->shipping_address = $_POST['shipping-address'];$/;"	v	language:PHP
+shipping_address	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->shipping_address = 'different';$/;"	v	language:PHP
+shipping_address	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_address = false;$/;"	v	language:PHP
+shipping_address	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_address = false;$/;"	v	language:PHP
+shipping_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_address_city    = $params['shipping_address_city'];$/;"	v	language:PHP
+shipping_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_address_city;$/;"	v	language:PHP
+shipping_address_city	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $shipping_address_city   = $customer->shipping_address_city;$/;"	v	language:PHP
+shipping_address_country	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_address_country = $params['shipping_address_country'];$/;"	v	language:PHP
+shipping_address_country	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_address_country;$/;"	v	language:PHP
+shipping_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_address_line_1  = $params['shipping_address_line_1'];$/;"	v	language:PHP
+shipping_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_address_line_1;$/;"	v	language:PHP
+shipping_address_line_1	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $shipping_address_line_1 = $customer->shipping_address_line_1;$/;"	v	language:PHP
+shipping_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_address_state   = $params['shipping_address_state'];$/;"	v	language:PHP
+shipping_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_address_state;$/;"	v	language:PHP
+shipping_address_state	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $shipping_address_state  = $customer->shipping_address_state;$/;"	v	language:PHP
+shipping_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_address_zip     = $params['shipping_address_zip'];$/;"	v	language:PHP
+shipping_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_address_zip;$/;"	v	language:PHP
+shipping_address_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $shipping_address_zip    = $customer->shipping_address_zip;$/;"	v	language:PHP
+shipping_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $this->shipping_city = $_POST['shipping_city'];$/;"	v	language:PHP
+shipping_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->shipping_city = $customer->shipping_address_city;$/;"	v	language:PHP
+shipping_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_city = false;$/;"	v	language:PHP
+shipping_city	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_city = false;$/;"	v	language:PHP
+shipping_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $this->shipping_line1 = $_POST['shipping_line_1'];$/;"	v	language:PHP
+shipping_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->shipping_line1 = $customer->shipping_address_line_1;$/;"	v	language:PHP
+shipping_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_line1 = false;$/;"	v	language:PHP
+shipping_line1	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_line1 = false;$/;"	v	language:PHP
+shipping_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->shipping_name            = $params['shipping_name'];$/;"	v	language:PHP
+shipping_name	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $shipping_name;$/;"	v	language:PHP
+shipping_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $this->shipping_state = $_POST['shipping_state'];$/;"	v	language:PHP
+shipping_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->shipping_state = $customer->shipping_address_state;$/;"	v	language:PHP
+shipping_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_state = false;$/;"	v	language:PHP
+shipping_state	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_state = false;$/;"	v	language:PHP
+shipping_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $this->shipping_zip = $_POST['shipping_zip'];$/;"	v	language:PHP
+shipping_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $this->shipping_zip = $customer->shipping_address_zip;$/;"	v	language:PHP
+shipping_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_zip = false;$/;"	v	language:PHP
+shipping_zip	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  private $shipping_zip = false;$/;"	v	language:PHP
+shortcodeController	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^  $shortcodeController = new PressPayShortcodeController;$/;"	v	language:PHP
+show	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/packages_controller.rb	/^  def show$/;"	f	language:Ruby	class:PackagesController
+show	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/users_controller.rb	/^  def show$/;"	f	language:Ruby	class:UsersController
+show	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def show$/;"	f	language:Ruby	class:PostsController
+show	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def show$/;"	f	language:Ruby	class:StudentsController
+show	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def show$/;"	f	language:Ruby	class:TeachersController
+size	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def size$/;"	f	language:Ruby	class:CashRegister.Change
+size	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def size$/;"	f	language:Ruby	class:Change
+sk_live	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $sk_live        = $response['access_token'];$/;"	v	language:PHP
+sk_test	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $sk_test = $response['access_token'];$/;"	v	language:PHP
+sms	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^        $sms = $client->account->sms_messages->create($/;"	v	language:PHP
+solution	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^  def solution(a)$/;"	f	language:Ruby	class:Deviation
+solution	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/deviation_spec.rb	/^  def solution(k, a)$/;"	f	language:Ruby	class:Pairs
+solution	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/spec/test_spec.rb	/^  def solution(a)$/;"	f	language:Ruby	class:Equi
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_customers.php	/^      $sql = "CREATE TABLE " . PRESS_PAY_CUSTOMER_TABLE . " ($/;"	v	language:PHP
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_customers.php	/^      $sql = "DROP TABLE " . PRESS_PAY_CUSTOMER_TABLE . ";";$/;"	v	language:PHP
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_emails.php	/^      $sql = "CREATE TABLE " . PRESS_PAY_EMAIL_TABLE . " ($/;"	v	language:PHP
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_emails.php	/^      $sql = "DROP TABLE " . PRESS_PAY_EMAIL_TABLE . ";";$/;"	v	language:PHP
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_transactions.php	/^      $sql = "CREATE TABLE " . PRESS_PAY_TRANSACTION_TABLE . " ($/;"	v	language:PHP
+sql	/Users/spinlock/WordPress/Plugins/press-pay/db/migrations/add_press_pay_transactions.php	/^      $sql = "DROP TABLE " . PRESS_PAY_TRANSACTION_TABLE . ";";$/;"	v	language:PHP
+state	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^    $state = preg_replace("\/^\/", "http", $_GET['state']);$/;"	v	language:PHP
+stripeConfirmationHandler	/Users/spinlock/WordPress/Plugins/press-pay/include/js/stripe-processing.js	/^function stripeConfirmationHandler(e) {$/;"	f	language:JavaScript
+stripeToken	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->stripeToken = $stripeToken;$/;"	v	language:PHP
+stripeToken	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $stripeToken;$/;"	v	language:PHP
+stripe_authenticated	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->stripe_authenticated = true;$/;"	v	language:PHP
+stripe_authenticated	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  protected $stripe_authenticated;$/;"	v	language:PHP
+STRIPE_BASE_DIR	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^	define( 'STRIPE_BASE_DIR', dirname( __FILE__ ) );$/;"	d	language:PHP
+STRIPE_BASE_URL	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^	define( 'STRIPE_BASE_URL', plugin_dir_url( __FILE__ ) );$/;"	d	language:PHP
+stripe_client	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $stripe_client = Stripe_Customer::create( array( 'card' => $_POST['stripeToken'] ) );$/;"	v	language:PHP
+stripe_client	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $stripe_client = Stripe_Customer::create( array( 'card' => $_POST['stripeToken'] ) );$/;"	v	language:PHP
+stripe_client_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->stripe_client_id         = $params['stripe_client_id'];$/;"	v	language:PHP
+stripe_client_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $stripe_client_id;$/;"	v	language:PHP
+stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->stripe_customer = $stripe_customer;$/;"	v	language:PHP
+stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  private $stripe_customer;$/;"	v	language:PHP
+stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $stripe_customer = $this->get_stripe_customer();$/;"	v	language:PHP
+stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $stripe_customer = $this->get_remote_stripe_customer( $this );$/;"	v	language:PHP
+stripe_customer	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $stripe_customer = $this->get_stripe_customer();$/;"	v	language:PHP
+stripe_is_authenticated	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  public function stripe_is_authenticated(){$/;"	f	language:PHP
+stripe_nonce	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^    $stripe_nonce    = wp_create_nonce('stripe-nonce');$/;"	v	language:PHP
+stripe_nonce	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^    $stripe_nonce    = wp_create_nonce('stripe-nonce');$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^    $stripe_options = get_option('stripe_settings');$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^    $this->stripe_options = get_option( 'stripe_settings' );$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^    $this->stripe_options = isset( $this->stripe_options )$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/controller.php	/^  protected $stripe_options;$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^    $stripe_options = get_option( 'stripe_settings' );$/;"	v	language:PHP
+stripe_options	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^    $stripe_options = get_option( 'stripe_settings' );$/;"	v	language:PHP
+stripe_settings	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^    $stripe_settings = get_option( 'stripe_settings' );$/;"	v	language:PHP
+stripe_settings	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^    $stripe_settings = get_option('stripe_settings');$/;"	v	language:PHP
+stripe_user_id	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^      $stripe_user_id = $response['stripe_user_id'];$/;"	v	language:PHP
+Student	/Users/spinlock/rails/katas/2.2.14/school/app/models/student.rb	/^class Student < ActiveRecord::Base$/;"	c	language:Ruby
+StudentsController	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^class StudentsController < ApplicationController$/;"	c	language:Ruby
+student_params	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/students_controller.rb	/^  def student_params$/;"	f	language:Ruby	class:StudentsController
+subject	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^        $subject = 'Failed Payment';$/;"	v	language:PHP
+subject	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^      $subject = "Payment Receipt";$/;"	v	language:PHP
+subject	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^    $subject         = "Yer Makin' Money";$/;"	v	language:PHP
+subject	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $subject = "Yer Makin' Money";$/;"	v	language:PHP
+subject	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $subject = 'Payment Receipt';$/;"	v	language:PHP
+Teacher	/Users/spinlock/rails/katas/1.31.14/school/app/models/teacher.rb	/^class Teacher < ActiveRecord::Base$/;"	c	language:Ruby
+TeachersController	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/teachers_controller.rb	/^class TeachersController < ApplicationController$/;"	c	language:Ruby
+TeachersController	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^class TeachersController < ApplicationController$/;"	c	language:Ruby
+teacher_params	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/teachers_controller.rb	/^  def teacher_params$/;"	f	language:Ruby	class:TeachersController
+teacher_params	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^    def teacher_params$/;"	f	language:Ruby	class:TeachersController
+TennentCorrespondence	/Users/spinlock/.vimrc	/^function! TennentCorrespondence()$/;"	f	language:Vim
+TennentRefactor	/Users/spinlock/.vimrc	/^command-range TennentRefactor call TennentCorrespondence()$/;"	c	language:Vim
+Test	/Users/spinlock/easy_post/easypost-sample-tracker/app/models/test.rb	/^class Test < ActiveRecord::Base$/;"	c	language:Ruby
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $test;$/;"	v	language:PHP
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->test                     = $params['test'];$/;"	v	language:PHP
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $test;$/;"	v	language:PHP
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $test;$/;"	v	language:PHP
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->test                  = $params['test'];$/;"	v	language:PHP
+test	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $test;$/;"	v	language:PHP
+test_mode	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_settings.php	/^  public function test_mode() {$/;"	f	language:PHP
+text	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function text($header, $key, $label='') {$/;"	f	language:PHP
+text=	/Users/spinlock/code_katas/markovchain.2.16.14/lib/markov_chain.rb	/^  def text=(url)$/;"	f	language:Ruby	class:MarkovChain
+TextMenu	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^	function TextMenu()$/;"	c	language:JavaScript
+TextMenu.generate	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		generate: function(canvas, mainMenu)$/;"	m	language:JavaScript
+TextMenu.setType	/Users/spinlock/WordPress/Plugins/paint-press/js/wPaint.js	/^		setType: function($this, $canvas, mode)$/;"	m	language:JavaScript
+to	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $to      = $customer->email;$/;"	v	language:PHP
+to	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^      $to      = get_bloginfo('admin_email');$/;"	v	language:PHP
+TrackController	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/track_controller.rb	/^class TrackController < ApplicationController$/;"	c	language:Ruby
+TrackRequest	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^  class TrackRequest$/;"	c	language:Ruby	class:USPS
+Traction	/Users/spinlock/traction/config/application.rb	/^module Traction$/;"	m	language:Ruby
+transaction	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^      $transaction = new PressPayTransaction($customer->id, $this->get_amount(), 'charge');$/;"	v	language:PHP
+transaction	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^        $transaction = new PressPayTransaction( array($/;"	v	language:PHP
+transaction	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $transaction = PressPayTransaction::find($this->press_pay_transaction_id);$/;"	v	language:PHP
+transaction	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $transaction = $wpdb->get_row($/;"	v	language:PHP
+transaction	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $transaction = new PressPayTransaction($/;"	v	language:PHP
+transaction	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^        $transaction = new PressPayTransaction( array($/;"	v	language:PHP
+translate	/Users/spinlock/carbon5/pig_latin_spec.rb	/^  def translate(phrase)$/;"	f	language:Ruby	class:PigLatin
+translate	/Users/spinlock/code_katas/piglatin-2014-02-18-112544/lib/piglatin.rb	/^  def translate$/;"	f	language:Ruby	class:PigLatin
+translate	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/lib/piglatin.rb	/^  def translate$/;"	f	language:Ruby	class:PigLatin
+translate	/Users/spinlock/code_katas/piglatin.2.3.14/piglatin.rb	/^  def translate$/;"	f	language:Ruby	class:PigLatin
+translate_word	/Users/spinlock/carbon5/pig_latin_spec.rb	/^  def translate_word(word)$/;"	f	language:Ruby	class:PigLatin
+translate_word	/Users/spinlock/code_katas/piglatin-2014-02-18-112544/lib/piglatin.rb	/^  def translate_word(word)$/;"	f	language:Ruby	class:PigLatin
+translate_word	/Users/spinlock/code_katas/piglatin-2014-03-19-145726/lib/piglatin.rb	/^  def translate_word(word)$/;"	f	language:Ruby	class:PigLatin
+translate_word	/Users/spinlock/code_katas/piglatin.2.3.14/piglatin.rb	/^  def translate_word(word)$/;"	f	language:Ruby	class:PigLatin
+twilio_settings	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^      $twilio_settings = get_option('twilio_settings');$/;"	v	language:PHP
+type	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->type                  = $params['type'];$/;"	v	language:PHP
+type	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $type;$/;"	v	language:PHP
+unfollow!	/Users/spinlock/rails/haiku/app/models/user.rb	/^  def unfollow!(followed)$/;"	f	language:Ruby	class:User
+update	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def update$/;"	f	language:Ruby	class:USPS.TrackRequest
+update	/Users/spinlock/rails/katas/1.31.14/school/app/controllers/posts_controller.rb	/^  def update$/;"	f	language:Ruby	class:PostsController
+update	/Users/spinlock/rails/katas/2.2.14/school/app/controllers/teachers_controller.rb	/^  def update$/;"	f	language:Ruby	class:TeachersController
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^    $this->updated_at               = $params['updated_at'];$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public $updated_at;$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->updated_at               = $params['updated_at'];$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $updated_at;$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^    $this->updated_at               = $params['updated_at'];$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public $updated_at;$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^      $this->updated_at            = $params['updated_at'];$/;"	v	language:PHP
+updated_at	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public $updated_at;$/;"	v	language:PHP
+update_checkout	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public function update_checkout() {$/;"	f	language:PHP
+upgrade_listener	/Users/spinlock/WordPress/Plugins/press-pay/press-pay.php	/^$upgrade_listener = new PressPayUpgradeListener;$/;"	v	language:PHP
+upgrade_server	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  private $upgrade_server;$/;"	v	language:PHP
+url	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^    def url$/;"	f	language:Ruby	class:USPS
+User	/Users/spinlock/easy_post/easypost-sample-tracker/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c	language:Ruby
+User	/Users/spinlock/rails/haiku/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c	language:Ruby
+UserController	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/user_controller.rb	/^class UserController < ApplicationController$/;"	c	language:Ruby
+UsersController	/Users/spinlock/easy_post/easypost-sample-tracker/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c	language:Ruby
+using_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^    	$using_discount = true;$/;"	v	language:PHP
+using_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^      $using_discount = $this->atomic_process_discount();$/;"	v	language:PHP
+using_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^    $using_discount = false;$/;"	v	language:PHP
+using_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public $using_discount = false;$/;"	v	language:PHP
+using_discount	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public $using_discount = false;$/;"	v	language:PHP
+USPS	/Users/spinlock/easy_post/easypost-sample-tracker/lib/usps/track_request.rb	/^module USPS$/;"	m	language:Ruby
+V1	/Users/spinlock/traction/app/api/v1/base.rb	/^  module V1$/;"	m	language:Ruby	class:API
+V1	/Users/spinlock/traction/app/api/v1/defaults.rb	/^  module V1$/;"	m	language:Ruby	class:API
+V1	/Users/spinlock/traction/app/api/v1/web_sites.rb	/^  module V1$/;"	m	language:Ruby	class:API
+V1	/Users/spinlock/traction/app/controllers/api/v1/base.rb	/^  module V1$/;"	m	language:Ruby	class:API
+V1	/Users/spinlock/traction/app/controllers/api/v1/web_sites.rb	/^  module V1$/;"	m	language:Ruby	class:API
+validate_integer_array	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/cashregister.rb	/^  def validate_integer_array(array)$/;"	f	language:Ruby	class:CashRegister.get_optimal_change
+value	/Users/spinlock/code_katas/cashregister-2014-02-20-145832/lib/cashregister.rb	/^  def value$/;"	f	language:Ruby	class:CashRegister.Change
+value	/Users/spinlock/code_katas/cashregister-2014-02-24-100146/lib/cashregister.rb	/^  def value$/;"	f	language:Ruby	class:CashRegister.coins=.Change
+value	/Users/spinlock/code_katas/cashregister-2014-02-25-082553/lib/change.rb	/^  def value$/;"	f	language:Ruby	class:Change
+value	/Users/spinlock/code_katas/cashregister-2014-02-27-154001/lib/change.rb	/^  def value$/;"	f	language:Ruby	class:Change
+value	/Users/spinlock/code_katas/cashregister-2014-02-28-120057/lib/change.rb	/^  def value$/;"	f	language:Ruby	class:Change
+value	/Users/spinlock/code_katas/cashregister.2.19.14/cash_register.rb	/^  def value$/;"	f	language:Ruby	class:Change
+WebSites	/Users/spinlock/traction/app/api/v1/web_sites.rb	/^    class WebSites < Grape::API$/;"	c	language:Ruby	class:API.V1
+WebSites	/Users/spinlock/traction/app/controllers/api/v1/web_sites.rb	/^    class WebSites < Grape::API$/;"	c	language:Ruby	class:API.V1
+WebSiteSerializer	/Users/spinlock/traction/app/serializers/web_site_serializer.rb	/^class WebSiteSerializer < ActiveModel::Serializer$/;"	c	language:Ruby
+WebSiteWorker	/Users/spinlock/traction/app/workers/web_site_worker.rb	/^class WebSiteWorker$/;"	c	language:Ruby
+WordioShortcodesController	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^<?php class WordioShortcodesController {$/;"	c	language:PHP
+wp_user_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^      $this->wp_user_id               = $params['wp_user_id'];$/;"	v	language:PHP
+wp_user_id	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public $wp_user_id;$/;"	v	language:PHP
+wp_version	/Users/spinlock/Downloads/salient/tmp/salient/index.php	/^					$wp_version = floatval(get_bloginfo('version'));$/;"	v	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay-command-center/app/controllers/listeners_controller.php	/^  public function __construct() {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay-command-center/lib/formidable/formidable.php	/^    public function __construct($settings_string) {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/admin.controller.php	/^  public function __construct() {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/checkout.controller.php	/^  public function __construct(){$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/email.controller.php	/^  public function __construct(){$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/listener/press_pay_upgrade_controller.php	/^  public function __construct() {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/controller/press_pay_shortcodes_controller.php	/^  public function __construct() {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/model/email.model.php	/^  public function __construct($params = array()) {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_customer.php	/^    public function __construct( $params = array() ) {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_email.php	/^  public function __construct($params = array()) {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/press-pay/app/model/press_pay_transaction.php	/^    public function __construct( $params = array() ) {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Plugins/wordio/app/controllers/wordio_shortcodes_controller.php	/^  public function __construct() {$/;"	f	language:PHP
+__construct	/Users/spinlock/WordPress/Subversion/press-pay/tags/2.0/app/controller/press_pay_shortcodes_controller.php	/^  public function __construct() {$/;"	f	language:PHP

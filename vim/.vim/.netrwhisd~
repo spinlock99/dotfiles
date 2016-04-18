@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/spinlock/WordPress/Plugins/press-pay'
+let g:netrw_dirhist_2='/Users/spinlock/WordPress/Plugins/press-pay/app'
+let g:netrw_dirhist_3='/Users/spinlock/WordPress/Plugins/press-pay/app/view'
+let g:netrw_dirhist_4='/Users/spinlock/WordPress/Plugins/press-pay/app/view/checkout'

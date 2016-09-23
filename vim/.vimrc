@@ -105,7 +105,11 @@ map <c-k> <C-W>k<C-W>_
 map <c-o> :res 100<CR>
 "}}}
 
+"source vimrc
+nnoremap <leader>i :source ~/.vimrc<Enter>
+
 " execute current file
+nnoremap <leader>x :!%:p<Enter>
 nnoremap <leader>r :!%:p<Enter>
 nnoremap <leader>R :!%:p<space>
 

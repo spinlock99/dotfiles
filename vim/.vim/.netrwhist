@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/spinlock/handshake/todo/app/application'
+let g:netrw_dirhist_2='/Users/spinlock/handshake/todo/app'
+let g:netrw_dirhist_3='/Users/spinlock/handshake/todo'
+let g:netrw_dirhist_4='/Users/spinlock/handshake/todo/tests'
+let g:netrw_dirhist_5='/Users/spinlock/handshake/todo/tests/unit'
+let g:netrw_dirhist_6='/Users/spinlock/handshake/todo/tests/unit/application'
+let g:netrw_dirhist_7='/Users/spinlock/project-euler'

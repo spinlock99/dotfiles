@@ -1,0 +1,52 @@
+startup_message off
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;screen\007:ti@:te@'
+
+shell -$SHELL
+layout autosave on
+
+screen -t platform-v2
+select 0
+wrap off
+stuff "ps aux | grep unicorn | grep 3000 | awk '{print $2}' | xargs kill -9 ^M"
+stuff "cd ~/adstage-source/adstage-platform-v2; git checkout fix; git pull; bundle install; bundle exec rake db:migrate; bundle exec rake cequel:migrate; foreman start -c web=1,all_worker=1 ^M"
+
+screen -t adstage-ember
+select 1
+stuff "cd ~/adstage-source/adstage-ember; git checkout fix; git pull; brunch w -s ^M"
+
+screen -t datomic-transactor
+select 2
+stuff "cd ~/datomic/datomic-pro-0.9.5344/; bin/transactor config/dev-transactor-template.properties ^M"
+
+screen -t automate-storage
+select 3
+stuff "cd ~/adstage-source/adstage-automation-storage; git checkout fix; git pull; lein run ^M"
+
+screen -t automate-rails
+select 4
+wrap off
+stuff "ps aux | grep puma | awk '{print $2}' | xargs kill -9 ^M"
+stuff "cd ~/adstage-source/adstage-automation-rails; git checkout fix; git pull; bundle install; bundle exec rake db:migrate; foreman start -e .env.development -c web=1,all_worker=1 ^M"
+
+screen -t automate-ember
+select 5
+stuff "cd ~/adstage-source/adstage-automation-ember; git checkout fix; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+
+screen -t automate-gooey
+select 6
+stuff "cd ~/adstage-source/adstage-gooey; git checkout master; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+
+screen -t automate-tables
+select 7
+stuff "cd ~/adstage-source/adstage-tables; git checkout master; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+
+altscreen on
+term screen-256color
+bind ',' prev
+bind '.' next
+bind 'K' quit
+
+# change the hardstatus settings to give an window list at the bottom of the
+# screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'

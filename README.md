@@ -1,11 +1,7 @@
 from ~/dotfiles run:
 
-
-```
-$stow bash
-$stow vim
-$git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-```
-
+    $make list ; list available packages
+    $make vim ; installs vim
+    $make ; installs everything
 
 to install dotfiles for bash and vim respectively

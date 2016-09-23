@@ -10,7 +10,7 @@ set laststatus=2
 " Vundle {{{1
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " Grep

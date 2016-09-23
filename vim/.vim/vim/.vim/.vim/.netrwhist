@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/spinlock/twitch/web/app/views/active_admin'
-let g:netrw_dirhist_2='/Users/spinlock/twitch/web/app/views/active_admin/partner_profiles'
-let g:netrw_dirhist_3='/Users/spinlock/twitch/web'
-let g:netrw_dirhist_4='/Users/spinlock/twitch/web/spec'
-let g:netrw_dirhist_5='/Users/spinlock/twitch/web/spec/factories'

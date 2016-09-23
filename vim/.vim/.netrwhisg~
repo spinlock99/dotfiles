@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/spinlock/WordPress/Plugins/press-pay'
-let g:netrw_dirhist_2='/Users/spinlock/WordPress/Plugins/press-pay/includes'
-let g:netrw_dirhist_3='/Users/spinlock/WordPress/Plugins/press-pay/includes/js'

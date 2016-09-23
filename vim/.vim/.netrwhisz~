@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/spinlock/WordPress/Plugins/wordpress-stripe-integration'
-let g:netrw_dirhist_2='/Users/spinlock/WordPress/Plugins'
-let g:netrw_dirhist_3='/Users/spinlock/WordPress/Plugins/test'
-let g:netrw_dirhist_4='/Users/spinlock/WordPress/Plugins/test/gist4652706-e0f02992f568987e43e384e95a4f778d64148e24'
-let g:netrw_dirhist_5='/Users/spinlock/WordPress/Plugins/wordpress-stripe-integration'
-let g:netrw_dirhist_6='/Users/spinlock/WordPress/Plugins/wordpress-stripe-integration/includes'

@@ -1,4 +1,5 @@
 PACKAGES=bash vim zsh screen
+.PHONY: $(PACKAGES)
 
 all: $(PACKAGES)
 
@@ -16,15 +17,16 @@ vim: vim/.vimrc
 	vim +PluginInstall +qall
 
 zsh: zsh/.zshrc
-	stow zsh
 	# Oh My Zsh for good default shell setup
-	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 	# Additional shell setup
 	cp aliases.zsh ~/.oh-my-zsh/custom
 
 	# Required for rbenv to work properly
 	cp rbenv.zsh ~/.oh-my-zsh/custom
+	stow zsh
 
 screen: screen/.screenrc
 	stow screen

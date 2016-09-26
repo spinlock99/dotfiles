@@ -1,24 +1,18 @@
-"set shell=bash\ --login
-
-" vim: foldmethod=marker
-syntax on
 set nocompatible
 filetype off
-" always show status bar
-set laststatus=2
 
 " Vundle {{{1
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Plugin 'gmarik/vundle'
-" Grep
-Plugin 'rking/ag.vim'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 " tpope
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-dispatch'
+" Grep
+Plugin 'rking/ag.vim'
 " tags
 Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-easytags'
@@ -58,11 +52,15 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
 " Reddit
 "Plugin 'joshhartigan/vim-reddit'
-autocmd BufNewFile,BufRead *.slim set filetype=slim
 "}}}
+call vundle#end()
 filetype plugin indent on
+autocmd BufNewFile,BufRead *.slim set filetype=slim
 
 " set preferences {{{1
+syntax on
+" always show status bar
+set laststatus=2
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 set colorcolumn=120
 set number

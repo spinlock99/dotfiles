@@ -12,9 +12,12 @@ bash: bash/.bash_profile
 vim: vim/.vimrc
 	stow vim
 	mkdir -p ~/.vim/bundle
-	rm -rf ~/.vim/bundle/vundle
-	git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
+
+vim-clean:
+	stow -D vim
+	rm -rf ~/.vim
 
 zsh: zsh/.zshrc
 	# Oh My Zsh for good default shell setup

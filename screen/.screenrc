@@ -1,44 +1,46 @@
 startup_message off
 termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;screen\007:ti@:te@'
-
-shell -$SHELL
+shell /bin/bash
 layout autosave on
+scrollback 1000
 
-screen -t platform-v2
+screen -t rails
 select 0
 wrap off
-stuff "ps aux | grep unicorn | grep 3000 | awk '{print $2}' | xargs kill -9 ^M"
-stuff "cd ~/adstage-source/adstage-platform-v2; git checkout fix; git pull; bundle install; bundle exec rake db:migrate; bundle exec rake cequel:migrate; foreman start -c web=1,all_worker=1 ^M"
+stuff "lsof -i tcp:3000 | awk 'NR!=1 {print $2}' | xargs kill ^M"
+stuff "cd ~/Handshake/handshake; bundle install; bundle exec rake db:migrate; bin/rails server ^M"
 
-screen -t adstage-ember
+screen -t worker
 select 1
-stuff "cd ~/adstage-source/adstage-ember; git checkout fix; git pull; brunch w -s ^M"
+stuff "cd ~/Handshake/handshake; bundle exec sidekiq -C config/sidekiq_worker.yml ^M"
 
-screen -t datomic-transactor
+screen -t urgent
 select 2
-stuff "cd ~/datomic/datomic-pro-0.9.5344/; bin/transactor config/dev-transactor-template.properties ^M"
+stuff "cd ~/Handshake/handshake; bundle exec sidekiq -C config/sidekiq_urgent.yml ^M"
 
-screen -t automate-storage
+screen -t reindex
 select 3
-stuff "cd ~/adstage-source/adstage-automation-storage; git checkout fix; git pull; lein run ^M"
+stuff "cd ~/Handshake/handshake; bundle exec sidekiq -C config/sidekiq_reindex.yml ^M"
 
-screen -t automate-rails
+screen -t heavy
 select 4
-wrap off
-stuff "ps aux | grep puma | awk '{print $2}' | xargs kill -9 ^M"
-stuff "cd ~/adstage-source/adstage-automation-rails; git checkout fix; git pull; bundle install; bundle exec rake db:migrate; foreman start -e .env.development -c web=1,all_worker=1 ^M"
+stuff "cd ~/Handshake/handshake; bundle exec sidekiq -C config/sidekiq_heavy.yml ^M"
 
-screen -t automate-ember
+screen -t clock
 select 5
-stuff "cd ~/adstage-source/adstage-automation-ember; git checkout fix; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+stuff "cd ~/Handshake/handshake; bundle exec clockwork clock.rb ^M"
 
-screen -t automate-gooey
+screen -t reindexer
 select 6
-stuff "cd ~/adstage-source/adstage-gooey; git checkout master; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+stuff "cd ~/Handshake/handshake; bin/conditional_pgbouncer bundle exec ruby reindexer.rb ^M"
 
-screen -t automate-tables
+screen -t webpack
 select 7
-stuff "cd ~/adstage-source/adstage-tables; git checkout master; git pull; nvm use 5; npm install; until [ $? -eq 0 ]; do npm install; done; bower install; npm start ^M"
+stuff "cd ~/Handshake/handshake; bin/webpack ^M"
+
+screen -t guard
+select 8
+stuff "cd ~/Handshake/handshake; bundle exec guard ^M"
 
 altscreen on
 term screen-256color

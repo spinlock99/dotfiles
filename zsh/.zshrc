@@ -1,7 +1,10 @@
 
 # There must be a better way to manage plugins but zplug didn't do the trick.
 source ~/dotfiles/zsh-autoenv/autoenv.zsh
+AUTOENV_FILE_ENTER=.env
 
+# show stats for long running tasks
+REPORTTIME=10
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -89,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+alias vi="vim"
 eval "$(rbenv init -)"
 
 export NVM_DIR="/Users/spinlock/.nvm"

@@ -7,55 +7,51 @@ defscrollback 100000
 screen -t rails
 select 0
 wrap off
-stuff "lsof -i tcp:3000 | awk 'NR!=1 {print $2}' | xargs kill ^M"
+stuff "lsof -i tcp:3000 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
 stuff "cd ~/Handshake/handshake; ^M"
 stuff "bundle install; bundle exec rake db:migrate ^M"
 stuff "set -a; . .env; set +a ^M"
-stuff "bin/conditional_pgbouncer bin/conditional_socksify bin/web ^M"
+stuff "env WEBPACK_ASSETS=true bin/conditional_pgbouncer bin/conditional_socksify bin/web ^M"
 
-screen -t worker
+screen -t foreman
 select 1
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/conditional_pgbouncer bundle exec sidekiq -C config/sidekiq_worker.yml ^M"
-
-screen -t urgent
-select 2
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/conditional_pgbouncer bundle exec sidekiq -C config/sidekiq_urgent.yml ^M"
-
-screen -t reindex
-select 3
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/conditional_pgbouncer bundle exec sidekiq -C config/sidekiq_reindex.yml ^M"
-
-screen -t heavy
-select 4
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/conditional_pgbouncer bundle exec sidekiq -C config/sidekiq_heavy.yml ^M"
-
-screen -t clock
-select 5
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bundle exec clockwork clock.rb ^M"
-
-screen -t reindexer
-select 6
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/conditional_pgbouncer bundle exec ruby reindexer.rb ^M"
+stuff "cd ~/Handshake/handshake; ^M"
+sruff "foreman start"
 
 screen -t webpack
-select 7
+select 2
+stuff "lsof -i tcp:8080 |awk 'NR!=1 {print \$2}' | xargs kill ^M"
 stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "bin/webpack ^M"
+stuff "env bin/webpack ^M"
 
 screen -t guard
-select 8
+select 3
 stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
 stuff "bundle exec guard ^M"
 
-screen -t karma
-select 9
+screen -t local-test
+select 4
 stuff "cd ~/Handshake/handshake; nvm use; npm run local-test; ^M"
+
+screen -t handshake-office
+select 5
+stuff "cd ~/Handshake/handshake-office; set -a; . .env; set +a; ^M"
+stuff "foreman start ^M"
+
+screen -t storybook
+select 6
+stuff "cd ~/Handshake/handshake; set -; . .env; set +a; ^M"
+stuff "npm run storybook ^M"
+
+screen -t rails-console
+select 7
+wrap off
+stuff "cd ~/Handshake/handshake; ^M"
+stuff "set -a; . .env; set +a ^M"
+stuff "rails c ^M"
+
+# start on the rails server
+select 0
 
 altscreen on
 term screen-256color

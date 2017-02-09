@@ -4,51 +4,62 @@ shell -bash
 layout autosave on
 defscrollback 100000
 
-screen -t rails
-select 0
+screen -t server
+select server
 wrap off
+stuff "touch /tmp/screen.lock ^M"
 stuff "lsof -i tcp:3000 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
 stuff "cd ~/Handshake/handshake; ^M"
 stuff "bundle install; bundle exec rake db:migrate ^M"
+stuff "rm /tmp/screen.lock ^M"
 stuff "set -a; . .env; set +a ^M"
 stuff "env WEBPACK_ASSETS=true bin/conditional_pgbouncer bin/conditional_socksify bin/web ^M"
 
-screen -t foreman
-select 1
+screen -t console
+select console
+wrap off
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "cd ~/Handshake/handshake; ^M"
-sruff "foreman start"
+stuff "set -a; . .env; set +a ^M"
+stuff "rails c ^M"
 
-screen -t webpack
-select 2
-stuff "lsof -i tcp:8080 |awk 'NR!=1 {print \$2}' | xargs kill ^M"
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
-stuff "env bin/webpack ^M"
+screen -t foreman
+select foreman
+stuff "cd ~/Handshake/handshake; ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "foreman start; ^M" # use .foreman to specify procfile and exclude web
 
 screen -t guard
-select 3
+select guard
 stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
 stuff "bundle exec guard ^M"
 
-screen -t local-test
-select 4
-stuff "cd ~/Handshake/handshake; nvm use; npm run local-test; ^M"
+screen -t test
+select test
+stuff "cd ~/Handshake/handshake; nvm use; yarn run local-test; ^M"
 
-screen -t handshake-office
-select 5
+screen -t office
+select office
 stuff "cd ~/Handshake/handshake-office; set -a; . .env; set +a; ^M"
 stuff "foreman start ^M"
 
 screen -t storybook
-select 6
+select storybook
 stuff "cd ~/Handshake/handshake; set -; . .env; set +a; ^M"
-stuff "npm run storybook ^M"
+stuff "yarn run storybook ^M"
 
-screen -t rails-console
-select 7
-wrap off
-stuff "cd ~/Handshake/handshake; ^M"
-stuff "set -a; . .env; set +a ^M"
-stuff "rails c ^M"
+#screen -t wat
+#select wat
+#stuff "cd ~/Handshake/handshake ^M"
+#stuff "bundle install ^M"
+#stuff "bundle exec rake db:migrate ^M"
+#split -v
+#focus right
+#screen -t huh
+#select huh
+#focus left
+
+
 
 # start on the rails server
 select 0
@@ -62,4 +73,4 @@ bind 'K' quit
 # change the hardstatus settings to give an window list at the bottom of the
 # screen, with the time and date and with the current window highlighted
 hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'

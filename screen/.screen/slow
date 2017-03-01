@@ -1,0 +1,7 @@
+stuff "touch /tmp/screen.lock ^M"
+stuff "lsof -i tcp:3000 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
+stuff "cd ~/Handshake/handshake; ^M"
+stuff "bundle install; bundle exec rake db:migrate ^M"
+stuff "rm /tmp/screen.lock ^M"
+stuff "set -a; . .env; set +a ^M"
+stuff "env WEBPACK_ASSETS=true bin/conditional_pgbouncer bin/conditional_socksify bin/web ^M"

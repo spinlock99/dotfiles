@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [[ ($* == *--fast*) || ($* == *-f*) ]]
+then
+  SPEED=fast screen
+else
+  SPEED=slow screen
+fi

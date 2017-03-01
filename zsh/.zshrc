@@ -97,4 +97,7 @@ eval "$(rbenv init -)"
 
 export NVM_DIR="/Users/spinlock/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/.rbenv/shims:$HOME/bin:/usr/local/sbin:$PATH:`yarn global bin`"
+
+# disable auto cd
+unsetopt AUTO_CD

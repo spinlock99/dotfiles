@@ -1,4 +1,4 @@
-PACKAGES=bash vim zsh screen
+PACKAGES=bash vim zsh screen hammerspoon
 .PHONY: $(PACKAGES)
 
 all: $(PACKAGES)
@@ -31,8 +31,11 @@ zsh: zsh/.zshrc
 	cp rbenv.zsh ~/.oh-my-zsh/custom
 	stow zsh
 
-screen: screen/.screenrc
+screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
 	stow screen
+
+hammerspoon: hammerspoon/.hammerspoon/init.lua
+	stow hammerspoon
 
 clean:
 	for package in $(PACKAGES) ; do \

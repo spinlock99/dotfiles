@@ -24,7 +24,7 @@ Plugin 'othree/html5.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
 " rspec and mocha!
-Plugin 'geekjuice/vim-spec'
+Plugin 'spinlock99/vim-spec'
 " rename
 Plugin 'danro/rename.vim'
 "nerdtree
@@ -58,7 +58,7 @@ autocmd BufNewFile,BufRead *.slim set filetype=slim
 " set preferences {{{1
 syntax enable
 colorscheme solarized
-set background=dark
+set background=light
 " always show status bar
 set laststatus=2
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
@@ -86,6 +86,8 @@ set wildmode=longest,list,full
 set wildmenu
 " keep 10 lines visible on top and bottom
 set scrolloff=10
+" make backspace work
+set backspace=start
 "}}}
 
 " Custom Key Bindings to move between windows {{{
@@ -117,10 +119,10 @@ au BufNewFile,BufRead *.arb set filetype=ruby
 filetype plugin indent on     " required!
 
 " rspec and mocha setup {{{
-let g:rspec_command = "!bin/rspec {spec}"
+let g:rspec_command = "!rspec {spec}"
 let g:mocha_coffee_command = "!mocha {spec}"
-let g:mocha_js_command = "!time NODE_PATH=/Users/spinlock/Handshake/handshake/frontend mocha --require .mocha.js {spec}"
-let g:mocha_debug_command = "!NODE_PATH=/Users/spinlock/Handshake/handshake/frontend mocha debug --require .mocha.js {spec}"
+let g:mocha_js_command = "!time NODE_PATH=./frontend mocha --require ./frontend/tests/mocha.js {spec}"
+let g:mocha_debug_command = "!NODE_PATH=./frontend mocha debug --require ./frontend/tests/mocha.js {spec}"
 
 " Rspec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>

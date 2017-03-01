@@ -48,3 +48,5 @@ export RUBYDB_OPTS="HOST=localhost PORT=9000"
 
 export NVM_DIR="/Users/spinlock/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(rbenv init -)"

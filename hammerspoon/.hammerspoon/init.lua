@@ -7,11 +7,20 @@ end)
 hs.hotkey.bind({"cmd", "ctrl"}, "R", function ()
   hs.reload()
 end)
-hs.alert.show("Config loaded")
+
+-- urlevent
+hs.urlevent.bind("alert", function(eventName, params)
+  hs.notify.new({title="alert", informativeText=params["text"]}):send()
+end)
 
 -- shrug
 hs.hotkey.bind({"ctrl", "alt"}, "H", function ()
   hs.eventtap.keyStrokes("¯\\_(ツ)_/¯")
+end)
+
+-- table flip
+hs.hotkey.bind({"cmd", "ctrl"}, "F", function ()
+  hs.eventtap.keyStrokes("(╯°□°）╯︵ ┻━┻")
 end)
 
 -- caffine alternative in menu

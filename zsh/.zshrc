@@ -101,3 +101,4 @@ export PATH="/.rbenv/shims:$HOME/bin:/usr/local/sbin:$PATH:`yarn global bin`"
 
 # disable auto cd
 unsetopt AUTO_CD
+eval "$(direnv hook $0)"

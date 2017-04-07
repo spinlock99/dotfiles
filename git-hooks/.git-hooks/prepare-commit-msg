@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ x = x${2} ]; then
+  branch_name=$(git symbolic-ref --short HEAD)
+  branch_title=$(echo $branch_name | sed -n 's|.*/ch[0-9]*/\(.*\)|\1|p' | sed 's|-| |g')
+  messages=$(git log $branch_name --not master)
+  story_number=$(echo $branch_name | sed -n 's|.*/ch\([0-9]*\)/.*|\1|p')
+  if [[ -z $messages ]] && [[ $story_number ]]; then
+    echo $branch_name
+    echo $branch_title
+    echo $story_number
+    if [ x != x${story_number} ]; then
+      sed -i.backup "1 s|^|$branch_title  [ch$story_number](https://app.clubhouse.io/handshake/story/$story_number)|" "$1"
+    fi
+  fi
+fi

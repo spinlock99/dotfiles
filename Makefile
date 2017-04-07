@@ -1,4 +1,4 @@
-PACKAGES=bash vim zsh screen hammerspoon
+PACKAGES=bash vim zsh screen hammerspoon git-hooks
 .PHONY: $(PACKAGES)
 
 all: $(PACKAGES)
@@ -36,6 +36,9 @@ screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
 
 hammerspoon: hammerspoon/.hammerspoon/init.lua
 	stow hammerspoon
+
+git-hooks: git-hooks/.git-hooks/prepare-commit-msg
+	stow git-hooks
 
 clean:
 	for package in $(PACKAGES) ; do \

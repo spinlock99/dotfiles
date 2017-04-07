@@ -26,6 +26,7 @@ stuff "foreman start; ^M" # use .foreman to specify procfile and exclude web
 screen -t guard
 select guard
 stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "bundle exec guard ^M"
 
 screen -t test

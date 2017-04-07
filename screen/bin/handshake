@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ $* == *--production* ]]
+then
+  heroku run DATABASE_URL=`heroku config:get FOLLOWER_DATABASE_URL -a handshake-production` rails console -a handshake-production
+fi
+
 if [[ ($* == *--fast*) || ($* == *-f*) ]]
 then
   SPEED=fast screen

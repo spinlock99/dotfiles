@@ -13,53 +13,40 @@ screen -t console
 select console
 wrap off
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
-stuff "cd ~/Handshake/handshake; ^M"
+stuff "cd ~/src/handshake; ^M"
 stuff "set -a; . .env; set +a ^M"
 stuff "rails c ^M"
 
 screen -t foreman
 select foreman
-stuff "cd ~/Handshake/handshake; ^M"
+stuff "cd ~/src/handshake; ^M"
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "foreman start; ^M" # use .foreman to specify procfile and exclude web
 
 screen -t guard
 select guard
-stuff "cd ~/Handshake/handshake; set -a; . .env; set +a; ^M"
+stuff "cd ~/src/handshake; set -a; . .env; set +a; ^M"
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "bundle exec guard ^M"
 
 screen -t test
 select test
-stuff "cd ~/Handshake/handshake; nvm use; yarn run local-test; ^M"
+stuff "cd ~/src/handshake; nvm use; yarn run local-test; ^M"
 
-screen -t office
-select office
-stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
-stuff "cd ~/Handshake/handshake-office ^M"
-stuff "set -a; . .env; set +a; ^M"
-stuff "foreman start ^M"
+#screen -t office
+#select office
+#stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
+#stuff "cd ~/src/handshake-office ^M"
+#stuff "set -a; . .env; set +a; ^M"
+#stuff "foreman start ^M"
 
-screen -t storybook
-select storybook
-stuff "cd ~/Handshake/handshake; set -; . .env; set +a; ^M"
-stuff "yarn run storybook ^M"
-
-#screen -t wat
-#select wat
-#stuff "cd ~/Handshake/handshake ^M"
-#stuff "bundle install ^M"
-#stuff "bundle exec rake db:migrate ^M"
-#split -v
-#focus right
-#screen -t huh
-#select huh
-#focus left
-
-
+#screen -t storybook
+#select storybook
+#stuff "cd ~/src/handshake; set -; . .env; set +a; ^M"
+#stuff "yarn run storybook ^M"
 
 # start on the rails server
-select 0
+select server
 
 altscreen on
 term screen-256color

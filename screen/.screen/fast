@@ -1,6 +1,5 @@
 stuff "rm -f /tmp/screen.lock ^M"
-stuff "lsof -i tcp:3000 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
-stuff "cd ~/Handshake/handshake; ^M"
+stuff "lsof -i tcp:3000 | grep ruby | awk '{print \$2}' | xargs kill ^M"
+stuff "cd ~/src/handshake; ^M"
 stuff "set -a; . .env; set +a ^M"
-#stuff "env WEBPACK_ASSETS=true bin/conditional_pgbouncer bin/conditional_socksify bin/web | filter ^M"
 stuff "env WEBPACK_ASSETS=true bin/conditional_pgbouncer bin/conditional_socksify bin/web ^M"

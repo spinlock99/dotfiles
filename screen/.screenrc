@@ -33,12 +33,12 @@ screen -t test
 select test
 stuff "cd ~/src/handshake; nvm use; yarn run local-test; ^M"
 
-#screen -t office
-#select office
-#stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
-#stuff "cd ~/src/handshake-office ^M"
-#stuff "set -a; . .env; set +a; ^M"
-#stuff "foreman start ^M"
+screen -t office
+select office
+stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
+stuff "cd ~/src/handshake-office ^M"
+stuff "set -a; . .env; set +a; ^M"
+stuff "foreman start ^M"
 
 #screen -t storybook
 #select storybook

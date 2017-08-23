@@ -37,6 +37,9 @@ screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
 hammerspoon: hammerspoon/.hammerspoon/init.lua
 	stow hammerspoon
 
+git: git/.gitconfig
+	stow git
+
 git-hooks: git-hooks/.git/hooks/prepare-commit-msg git-hooks/.git/hooks/pre-push
 	git config --global init.templatedir '~/dotfiles/git-hooks'
 	cd ~/src/handshake

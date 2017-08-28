@@ -38,9 +38,6 @@ alias grep='grep --exclude=*.swp'
 # tex
 # export PATH="/usr/texbin":$PATH
 
-# my custom scripts and stuff
-export PATH="~/bin":$PATH
-
 # Vdebug setup
 #export RUBYDB_LIB=/Users/spinlock/lib/dbgp
 #export RUBYDB_OPTS="HOST=localhost PORT=9000"
@@ -50,9 +47,6 @@ export PATH="~/bin":$PATH
 export NVM_DIR="/Users/spinlock/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-eval "$(rbenv init -)"
-export PATH="/usr/local/sbin:$PATH"
-
 # brew install bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
@@ -61,3 +55,9 @@ if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
   source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
+export PATH=/User/dixon/bin:/Users/dixon/.rbenv/bin:/usr/local/sbin:/Users/dixon/.rbenv/shims:~/bin:/usr/local/sbin:/Users/dixon/.rbenv/shims:~/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+eval "$(rbenv init -)"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+
+source ~/.git-completion.bash

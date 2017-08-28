@@ -6,7 +6,7 @@ all: $(PACKAGES)
 list:
 	@echo $(PACKAGES)
 
-bash: bash/.bash_profile
+bash: bash/.bash_profile bash/.git-completion.bash
 	stow bash
 
 vim: vim/.vimrc

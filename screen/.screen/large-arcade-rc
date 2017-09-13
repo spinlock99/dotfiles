@@ -4,16 +4,16 @@ shell -bash
 layout autosave on
 defscrollback 100000
 
-screen -t webpack
-select webpack
+screen -t atomic-apps
+select atomic-apps
 wrap off
 stuff "touch /tmp/screen.lock ^M"
-stuff "cd ~/src/atomic-apps; ^M"
-stuff "nvm use ^M"
-stuff "yarn install^M"
-stuff "rm /tmp/screen.lock ^M"
+stuff "lsof -i tcp:5556 | grep node | awk '{print \$2}' | xargs kill ^M"
+stuff "cd ~/src/atomic-apps ^M"
 stuff "set -a; . .env; set +a ^M"
-stuff "yarn run webpack:dev ^M"
+stuff "yarn install ^M"
+stuff "rm /tmp/screen.lock ^M"
+stuff "yarn run dash ^M"
 
 screen -t github
 select github
@@ -29,30 +29,8 @@ stuff "cd ~/src/atomic-apps ^M"
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "yarn run socketio ^M"
 
-#screen -t guard
-#select guard
-#stuff "cd ~/src/handshake; set -a; . .env; set +a; ^M"
-#stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
-#stuff "bundle exec guard ^M"
-#
-#screen -t test
-#select test
-#stuff "cd ~/src/handshake; nvm use; yarn run local-test; ^M"
-#
-#screen -t office
-#select office
-#stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
-#stuff "cd ~/src/handshake-office ^M"
-#stuff "set -a; . .env; set +a; ^M"
-#stuff "foreman start ^M"
-#
-##screen -t storybook
-##select storybook
-##stuff "cd ~/src/handshake; set -; . .env; set +a; ^M"
-##stuff "yarn run storybook ^M"
-
-# start on the webpack dashboard
-select webpack
+# start on the dashboard
+select atomic-apps
 
 altscreen on
 term screen-256color

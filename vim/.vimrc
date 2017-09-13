@@ -58,11 +58,11 @@ autocmd BufNewFile,BufRead *.slim set filetype=slim
 " set preferences {{{1
 syntax enable
 colorscheme solarized
-set background=dark
+set background=light
 " always show status bar
 set laststatus=2
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
-set colorcolumn=120
+set colorcolumn=80,120
 set number
 set ruler
 set spell
@@ -126,7 +126,9 @@ let g:mocha_debug_command = "!NODE_PATH=./frontend mocha debug --require ./front
 
 " Rspec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec(0)<CR>
+" TODO: reinstall my fork of vim-spec
+"map <Leader>s :call RunNearestSpec(0)<CR>
+map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>d :call RunNearestSpec(1)<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>

@@ -1,0 +1,66 @@
+startup_message off
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;screen\007:ti@:te@'
+shell -bash
+layout autosave on
+defscrollback 100000
+
+screen -t webpack
+select webpack
+wrap off
+stuff "touch /tmp/screen.lock ^M"
+stuff "cd ~/src/atomic-apps; ^M"
+stuff "nvm use ^M"
+stuff "yarn install^M"
+stuff "rm /tmp/screen.lock ^M"
+stuff "set -a; . .env; set +a ^M"
+stuff "yarn run webpack:dev ^M"
+
+screen -t github
+select github
+wrap off
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "cd ~/src/atomic-apps; ^M"
+stuff "set -a; . .env; set +a ^M"
+stuff "yarn run github ^M"
+
+screen -t socket-io
+select socket-io
+stuff "cd ~/src/atomic-apps ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "yarn run socketio ^M"
+
+#screen -t guard
+#select guard
+#stuff "cd ~/src/handshake; set -a; . .env; set +a; ^M"
+#stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+#stuff "bundle exec guard ^M"
+#
+#screen -t test
+#select test
+#stuff "cd ~/src/handshake; nvm use; yarn run local-test; ^M"
+#
+#screen -t office
+#select office
+#stuff "lsof -i tcp:3002 | awk 'NR!=1 {print \$2}' | xargs kill ^M"
+#stuff "cd ~/src/handshake-office ^M"
+#stuff "set -a; . .env; set +a; ^M"
+#stuff "foreman start ^M"
+#
+##screen -t storybook
+##select storybook
+##stuff "cd ~/src/handshake; set -; . .env; set +a; ^M"
+##stuff "yarn run storybook ^M"
+
+# start on the webpack dashboard
+select webpack
+
+altscreen on
+term screen-256color
+bind ',' prev
+bind '.' next
+bind 'K' quit
+
+# change the hardstatus settings to give an window list at the bottom of the
+# screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'

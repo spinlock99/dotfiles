@@ -7,7 +7,15 @@ defscrollback 100000
 screen -t server
 select server
 wrap off
+stuff "cd ~/src/handshake; ^M"
+stuff "nvm use; ^<M"
 source $HOME/.screen/$SPEED
+
+screen -t webpack
+select webpack
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "cd ~/src/handshake; set -a; . .env; set +a; nvm use; ^M"
+stuff "yarn run webpack-dashboard-hot-assets ^M"
 
 screen -t console
 select console

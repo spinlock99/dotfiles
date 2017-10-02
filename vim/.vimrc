@@ -24,7 +24,8 @@ Plugin 'othree/html5.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
 " rspec and mocha!
-Plugin 'spinlock99/vim-spec'
+"Plugin 'spinlock99/vim-spec'
+Plugin 'geekjuice/vim-spec'
 " rename
 Plugin 'danro/rename.vim'
 "nerdtree
@@ -121,18 +122,21 @@ filetype plugin indent on     " required!
 " rspec and mocha setup {{{
 let g:rspec_command = "!rspec {spec}"
 let g:mocha_coffee_command = "!mocha {spec}"
-let g:mocha_js_command = "!time NODE_PATH=./frontend mocha --require ./frontend/tests/mocha.js {spec}"
-let g:mocha_debug_command = "!NODE_PATH=./frontend mocha debug --require ./frontend/tests/mocha.js {spec}"
+let g:mocha_js_command = "!time NODE_PATH=./frontend $(yarn bin)/mocha --require ./frontend/tests/mocha.js {spec}"
+let g:mocha_debug_command = "!NODE_PATH=./frontend $(yarn bin)/mocha debug --require ./frontend/tests/mocha.js {spec}"
 
 " Rspec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 " TODO: reinstall my fork of vim-spec
 "map <Leader>s :call RunNearestSpec(0)<CR>
-map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>s :call RunNearestSpec(0)<CR>
 map <Leader>d :call RunNearestSpec(1)<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 "}}}
+
+" generate swagger.json from integration specs
+map <Leader>sw :Rake rswag:specs:swaggerize<CR>
 
 map <Leader>w :!source '/Users/dixon/.nvm/nvm.sh'; nvm use 0.12; npm test -- config.js<Enter>
 

@@ -1,5 +1,7 @@
+[color]
+  ui = true
 [user]
-	email = andrew.d.dixon@gmail.com
+	email = andrew@joinhandshake.com
 	name = Andrew Dixon
 [push]
 	default = simple
@@ -7,4 +9,6 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	co = checkout
 [core]
-	editor = vim
+  editor = vim
+[init]
+  templatedir = ~/dotfiles/git-hooks

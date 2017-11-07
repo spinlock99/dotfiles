@@ -89,6 +89,9 @@ set wildmenu
 set scrolloff=10
 " make backspace work
 set backspace=start
+" don't put backup files in with the source
+set backupdir=$TMPDIR//
+set directory=$TMPDIR//
 "}}}
 
 " Custom Key Bindings to move between windows {{{

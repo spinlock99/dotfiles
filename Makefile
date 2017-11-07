@@ -40,7 +40,7 @@ screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
 hammerspoon: hammerspoon/.hammerspoon/init.lua
 	stow -t ~ hammerspoon
 
-git: git/.gitconfig
+git: git/.gitconfig git/.gitignore_global
 	stow -t ~ git
 
 git-hooks: git-hooks/.git/hooks/prepare-commit-msg git-hooks/.git/hooks/pre-push

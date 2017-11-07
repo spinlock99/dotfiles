@@ -1,7 +1,7 @@
 [color]
   ui = true
 [user]
-	email = andrew@joinhandshake.com
+	email = andrew.dixon@lendstreet.com
 	name = Andrew Dixon
 [push]
 	default = simple
@@ -10,5 +10,6 @@
 	co = checkout
 [core]
   editor = vim
+	excludefile = /Users/spinlock/.gitignore_global
 [init]
   templatedir = ~/dotfiles/git-hooks

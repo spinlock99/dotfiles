@@ -1,4 +1,4 @@
-PACKAGES=bash vim zsh screen hammerspoon git-hooks
+PACKAGES=bash vim screen hammerspoon git
 .PHONY: $(PACKAGES)
 
 all: $(PACKAGES)
@@ -6,11 +6,14 @@ all: $(PACKAGES)
 list:
 	@echo $(PACKAGES)
 
+stow:
+	brew install stow
+
 bash: bash/.bash_profile bash/.git-completion.bash
-	stow bash
+	stow -t ~ bash
 
 vim: vim/.vimrc
-	stow vim
+	stow -t ~ vim
 	mkdir -p ~/.vim/bundle
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
@@ -32,13 +35,13 @@ zsh: zsh/.zshrc
 	stow zsh
 
 screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
-	stow screen
+	stow -t ~ screen
 
 hammerspoon: hammerspoon/.hammerspoon/init.lua
-	stow hammerspoon
+	stow -t ~ hammerspoon
 
 git: git/.gitconfig
-	stow git
+	stow -t ~ git
 
 git-hooks: git-hooks/.git/hooks/prepare-commit-msg git-hooks/.git/hooks/pre-push
 	git config --global init.templatedir '~/dotfiles/git-hooks'

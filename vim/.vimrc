@@ -59,7 +59,7 @@ autocmd BufNewFile,BufRead *.slim set filetype=slim
 " set preferences {{{1
 syntax enable
 colorscheme solarized
-set background=light
+set background=dark
 " always show status bar
 set laststatus=2
 set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)

@@ -9,6 +9,10 @@ list:
 stow:
 	brew install stow
 
+nvm:
+	if [ ! -d ~/.nvm ]; then mkdir ~/.nvm; fi
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
 bash: bash/.bash_profile bash/.git-completion.bash
 	stow -t ~ bash
 

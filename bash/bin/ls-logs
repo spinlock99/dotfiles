@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# vi:styntax=bash
+
+trap 'kill $(jobs -p)' EXIT
+
+ssh lsbot@prodapp02.ls.net tail -f /var/www/lendstreet.com/current/log/production.log &
+ssh lsbot@prodapp05.ls.net tail -f /var/www/lendstreet.com/current/log/production.log &
+
+wait

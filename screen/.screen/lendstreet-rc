@@ -1,0 +1,49 @@
+startup_message off
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;screen\007:ti@:te@'
+shell -bash
+#layout autosave on
+defscrollback 100000
+
+screen -t webpack
+select webpack
+wrap off
+stuff "lsof -i tcp:8080 | grep node | awk '{print \$2}' | xargs kill ^M"
+stuff "cd ~/src/lendstreet.com ^M"
+stuff "yarn install ^M"
+stuff "yarn run dashboard ^M"
+
+screen -t rails
+select rails
+wrap off
+stuff "cd ~/src/lendstreet.com; ^M"
+stuff "touch /tmp/screen.lock ^M"
+stuff "bundle install ^M"
+stuff "rake db:migrate ^M"
+stuff "rm /tmp/screen.lock ^M"
+stuff "bin/rails server --port 5000 ^M"
+
+screen -t sidekiq
+select sidekiq
+wrap off
+stuff "cd ~/src/lendstreet.com; ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "bundle exec sidekiq ^M"
+
+screen -t deep_blue
+select deep_blue
+wrap off
+stuff "cd ~/src/deep_blue ^M"
+stuff "mix phoenix.server ^M"
+
+select webpack
+
+altscreen on
+term screen-256color
+bind ',' prev
+bind '.' next
+bind 'K' quit
+
+# change the hardstatus settings to give an window list at the bottom of the
+# screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'

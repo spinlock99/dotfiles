@@ -8,6 +8,11 @@ hs.hotkey.bind({"cmd", "ctrl"}, "R", function ()
   hs.reload()
 end)
 
+-- arrow keys for Poker II keyboard
+hs.hotkey.bind({"alt"}, "J", function ()
+  hs.eventtap.keyStroke({}, "down")
+end)
+
 -- urlevent
 hs.urlevent.bind("alert", function(eventName, params)
   hs.notify.new({title="alert", informativeText=params["text"]}):send()

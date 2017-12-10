@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# vi:styntax=bash
+
+trap 'kill $(jobs -p)' EXIT
+
+ssh lsbot@proddeepblue01.ls.net tail -f /var/www/deep_blue/log/experian_response.log &
+ssh lsbot@proddeepblue01.ls.net tail -f /var/www/trans_union_response.log &
+
+wait

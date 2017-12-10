@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+SCREENRC=~/.screen/lendstreet-rc screen

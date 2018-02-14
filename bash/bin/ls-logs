@@ -1,9 +1,38 @@
 #!/usr/bin/env bash
 # vi:styntax=bash
 
+servers='alphaapp01'
+log_file='qa.log'
+
+while test $# -gt 0; do
+  case "$1" in
+    --production)
+      servers='prodapp02 prodapp05'
+      log_file='production.log'
+      shift
+      ;;
+    --qa)
+      servers='qaapp01'
+      log_file='qa.log'
+      shift
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
 trap 'kill $(jobs -p)' EXIT
+  for server in $servers
+  do
+    echo $server
+    ssh lsbot@$server.ls.net tail -f /var/www/lendstreet.com/current/log/$log_file &
+    ssh lsbot@$server.ls.net tail -f /var/www/lendstreet.com/current/log/unicorn.stdout.log &
+    ssh lsbot@$server.ls.net tail -f /var/www/lendstreet.com/current/log/unicorn.stderr.log &
+    ssh lsbot@$server.ls.net tail -f /var/www/lendstreet.com/current/log/sidekiq.log &
+    ssh lsbot@$server.ls.net tail -f /var/www/lendstreet.com/current/log/cron.log &
 
-ssh lsbot@prodapp02.ls.net tail -f /var/www/lendstreet.com/current/log/production.log &
-ssh lsbot@prodapp05.ls.net tail -f /var/www/lendstreet.com/current/log/production.log &
-
+    ssh lsbot@$server.ls.net sudo tail -f /var/log/upstart/deep_blue.log &
+    ssh lsbot@$server.ls.net sudo tail -f /var/log/monit.log &
+  done
 wait

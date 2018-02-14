@@ -20,7 +20,7 @@ stuff "touch /tmp/screen.lock ^M"
 stuff "bundle install ^M"
 stuff "rake db:migrate ^M"
 stuff "rm /tmp/screen.lock ^M"
-stuff "bin/rails server --port 5000 ^M"
+stuff "bin/rails server ^M"
 
 screen -t sidekiq
 select sidekiq

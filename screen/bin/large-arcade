@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+touch /tmp/screen.lock
 SCREENRC=~/.screen/large-arcade-rc screen

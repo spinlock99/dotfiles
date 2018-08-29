@@ -6,18 +6,23 @@ defscrollback 100000
 
 screen -t atomic-apps
 select atomic-apps
-wrap off
-stuff "touch /tmp/screen.lock ^M"
+stuff "nvm use lts/boron ^M"
 stuff "lsof -i tcp:5556 | grep node | awk '{print \$2}' | xargs kill ^M"
 stuff "cd ~/src/atomic-apps ^M"
-stuff "set -a; . .env; set +a ^M"
-stuff "yarn install ^M"
-stuff "rm /tmp/screen.lock ^M"
-stuff "yarn run dash ^M"
+stuff "touch /tmp/screen.lock  && yarn install && rm /tmp/screen.lock ^M"
+stuff "yarn run atomic-apps ^M"
+
+screen -t landing-page
+select landing-page
+stuff "lsof -i tcp:5000 | grep node | awk '{print \$2}' | xargs kill ^M"
+stuff "cd ~/src/landing-page ^M"
+stuff "yarn ^M"
+stuff "yarn start ^M"
 
 screen -t github
 select github
 wrap off
+stuff "nvm use lts/boron ^M"
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "cd ~/src/atomic-apps; ^M"
 stuff "set -a; . .env; set +a ^M"
@@ -25,9 +30,15 @@ stuff "yarn run github ^M"
 
 screen -t socket-io
 select socket-io
+stuff "nvm use lts/boron ^M"
 stuff "cd ~/src/atomic-apps ^M"
 stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
 stuff "yarn run socketio ^M"
+
+screen -t logs
+select logs
+wrap off
+stuff "la-logs ^M"
 
 # start on the dashboard
 select atomic-apps

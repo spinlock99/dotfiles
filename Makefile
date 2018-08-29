@@ -1,4 +1,4 @@
-PACKAGES=bash vim screen hammerspoon git
+PACKAGES=check bash vim screen hammerspoon git nvm git-prompt yarn
 .PHONY: $(PACKAGES)
 
 all: $(PACKAGES)
@@ -6,12 +6,25 @@ all: $(PACKAGES)
 list:
 	@echo $(PACKAGES)
 
-stow:
-	brew install stow
+check:
+	@type brew >/dev/null 2>&1 || $(MAKE) homebrew
+	@type stow >/dev/null 2>&1 || brew install stow
+
+homebrew-installer:
+	/usr/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install -o homebrew-installer
+
+homebrew: homebrew-installer
+	/usr/bin/ruby homebrew-installer
+
+git-prompt:
+	brew install bash-git-prompt
 
 nvm:
 	if [ ! -d ~/.nvm ]; then mkdir ~/.nvm; fi
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
+yarn:
+	brew install yarn
 
 bash: bash/.bash_profile bash/.git-completion.bash
 	stow -t ~ bash

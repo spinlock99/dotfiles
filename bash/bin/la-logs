@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# vi:styntax=bash
+
+servers='largearcade.com'
+log_file='syslog'
+
+trap 'kill $(jobs -p)' EXIT
+  for server in $servers
+  do
+    echo logging $server
+    ssh $server pm2 logs &
+    ssh $server sudo tail -f /var/log/nginx/access.log &
+    ssh $server sudo tail -f /var/log/nginx/error.log &
+  done
+wait

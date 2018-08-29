@@ -97,8 +97,8 @@ set directory=$TMPDIR//
 "}}}
 
 " Custom Key Bindings to move between windows {{{
-map <c-h> <c-w>h:vertical resize 140<CR>0
-map <c-l> <C-W>l:vertical resize 140<CR>0
+map <c-h> <c-w>h
+map <c-l> <C-W>l
 set wmh=0
 map <c-j> <C-W>j<C-W>_
 map <c-k> <C-W>k<C-W>_
@@ -109,6 +109,9 @@ map <c-o> :res 100<CR>
 " execute current file
 nnoremap <leader>r :!%:p<Enter>
 nnoremap <leader>R :!%:p<space>
+
+" run mocha
+nnoremap <leader>m :!/usr/local/bin/mocha<Enter>
 
 " execute coffeescript file
 nnoremap <leader>c :!coffee %:p -n<Enter>

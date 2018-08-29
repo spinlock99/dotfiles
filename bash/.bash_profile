@@ -1,4 +1,6 @@
-source "$HOME/.profile"
+set editing-mode vi
+
+export PATH=$HOME/bin:./biin:$PATH
 export EDITOR="/usr/local/bin/vim"
 #enables color in the terminal bash shell export
 CLICOLOR=1
@@ -22,6 +24,8 @@ fi
 source ~/.git-completion.bash
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+. "$NVM_DIR/nvm.sh"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(rbenv init -)"

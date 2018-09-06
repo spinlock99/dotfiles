@@ -52,10 +52,17 @@ end
 lastKeys = ""
 echoTap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
   local newKeys = ""
+  local keycode = event:getKeyCode()
   local flags = event:getFlags()
   local chars = event:getCharacters(true)
   if flags["ctrl"] then
     newKeys = "ctrl"
+  end
+
+  if keycode == 53 then chars = "" end
+  if keycode == 36 then
+    chars = ""
+    hs.alert("<return>")
   end
   if newKeys == "" then newKeys = chars else newKeys = newKeys .. " + " .. chars end
   if not (newKeys == lastKeys) then hs.alert(newKeys) end

@@ -1,3 +1,6 @@
+" workaround for NERDTree Bug
+let g:NERDTreeNodeDelimiter = "\u00a0"
+
 set nocompatible
 filetype off
 
@@ -64,7 +67,7 @@ colorscheme solarized
 set background=dark
 " always show status bar
 set laststatus=2
-set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+set statusline=%<\ %n:%{FugitiveStatusline()}%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 execute "set colorcolumn=" . join(range(80,120), ',')
 set number
 set ruler
@@ -106,6 +109,9 @@ map <c-k> <C-W>k<C-W>_
 map <c-o> :res 100<CR>
 "}}}
 
+" reload .vimrc
+nnoremap <leader>v :source ~/.vimrc<Enter>
+
 " execute current file
 nnoremap <leader>r :!%:p<Enter>
 nnoremap <leader>R :!%:p<space>
@@ -128,9 +134,9 @@ au BufNewFile,BufRead *.arb set filetype=ruby
 filetype plugin indent on     " required!
 
 " rspec and mocha setup {{{
-let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_command = "!bundle exec rspec --format documentation {spec}"
 let g:mocha_coffee_command = "!mocha {spec}"
-let g:mocha_js_command = "!time NODE_PATH=./frontend $(yarn bin)/mocha --require ./frontend/tests/mocha.js {spec}"
+let g:mocha_js_command = "!time $(yarn bin)/mocha test/bootstrap.js {spec}"
 let g:mocha_debug_command = "!NODE_PATH=./frontend $(yarn bin)/mocha debug --require ./frontend/tests/mocha.js {spec}"
 
 " Rspec.vim mappings
@@ -209,3 +215,6 @@ augroup quickfix
   autocmd!
   autocmd FileType qf setlocal wrap
 augroup END
+
+" Automatically open the quickfix window after grep (including Ggrep)
+autocmd QuickFixCmdPost *grep* cwindow

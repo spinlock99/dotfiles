@@ -50,35 +50,63 @@ end
 
 -- echo
 lastKeys = ""
+firstAlert = nil
 echoTap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
   local newKeys = ""
   local keycode = event:getKeyCode()
   local flags = event:getFlags()
   local chars = event:getCharacters(true)
+  if flags["cmd"] then
+    newKeys = "⌘ + "
+  end
   if flags["ctrl"] then
-    newKeys = "ctrl"
+    newKeys = "ctrl + "
+  end
+  if string.sub(lastKeys, -1) == chars then
+    newKeys = lastKeys
   end
 
-  if keycode == 53 then chars = "" end
   if keycode == 36 then
-    chars = ""
+    hs.alert.closeAll()
     hs.alert("<return>")
+    return false
   end
-  if newKeys == "" then newKeys = chars else newKeys = newKeys .. " + " .. chars end
-  if not (newKeys == lastKeys) then hs.alert(newKeys) end
+  if keycode == 48 then
+    hs.alert.closeAll()
+    hs.alert("<tab>")
+    return false
+  end
+  if keycode == 49 then
+    hs.alert.closeAll()
+    hs.alert("<space>")
+    return false
+  end
+  if keycode == 53 then
+    hs.alert.closeAll()
+    hs.alert("<esc>")
+    return false
+  end
+  if newKeys == "" then newKeys = chars else newKeys = newKeys .. chars end
+  if not (newKeys == lastKeys) then
+    hs.alert.closeAll()
+    hs.alert(newKeys)
+  end
   lastKeys = newKeys
   return false
 end)
 echoMode = hs.hotkey.modal.new({"cmd", "ctrl"}, "e")
 function echoMode:entered()
   echoTap:start()
+  hs.alert.defaultStyle['atScreenEdge'] = 1
+  hs.alert.defaultStyle['textSize'] = 40
   hs.alert("entered echo mode")
 end
 function echoMode:exited()
   echoTap:stop()
+  hs.alert.defaultStyle['atScreenEdge'] = 0
   hs.alert("exited echo mode")
 end
-echoMode:bind("", "escape", function() echoMode:exit() end)
+echoMode:bind({"cmd", "ctrl"}, "e", function() echoMode:exit() end)
 
 -- make caps lock act like esc when tapped
 send_escape = false

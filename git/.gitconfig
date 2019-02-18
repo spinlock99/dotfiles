@@ -11,5 +11,3 @@
 [core]
   editor = vim
 	excludefile = /Users/spinlock/.gitignore_global
-[init]
-  templatedir = ~/dotfiles/git-hooks

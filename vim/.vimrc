@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " tpope
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-ragtag'
@@ -67,7 +68,7 @@ colorscheme solarized
 set background=dark
 " always show status bar
 set laststatus=2
-set statusline=%<\ %n:%{FugitiveStatusline()}%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+set statusline=%<\ %n:%f\ %{FugitiveStatusline()}\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 execute "set colorcolumn=" . join(range(80,120), ',')
 set number
 set ruler

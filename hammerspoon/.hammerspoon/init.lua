@@ -8,9 +8,19 @@ hs.hotkey.bind({"cmd", "ctrl"}, "R", function ()
   hs.reload()
 end)
 
+-- zoom meeting
+hs.hotkey.bind({"cmd", "ctrl"}, "Z", function ()
+  hs.eventtap.keyStrokes("https://us04web.zoom.us/j/6287127373")
+end)
+
 -- arrow keys for Poker II keyboard
 hs.hotkey.bind({"alt"}, "J", function ()
   hs.eventtap.keyStroke({}, "down")
+end)
+
+-- f11
+hs.hotkey.bind({"cmd"}, "0", function ()
+  hs.eventtap.keyStroke({}, "f11")
 end)
 
 -- urlevent

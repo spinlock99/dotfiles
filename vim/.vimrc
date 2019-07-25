@@ -52,15 +52,21 @@ Plugin 'Quramy/vim-js-pretty-template'
 Plugin 'jason0x43/vim-js-indent'
 Plugin 'ianks/vim-tsx'
 " javascript
-Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'jelera/vim-javascript-syntax'S
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 " solarized
 Plugin 'altercation/vim-colors-solarized'
 " elixir
 Plugin 'elixir-editors/vim-elixir'
+" ruby
+Plugin 'ngmy/vim-rubocop'
 
 call vundle#end()
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.slim set filetype=slim
+
+autocmd BufNewFile  *.jsx	0r ~/vim/skeleton.jsx
 
 " set preferences {{{1
 syntax enable
@@ -68,7 +74,7 @@ colorscheme solarized
 set background=dark
 " always show status bar
 set laststatus=2
-set statusline=%<\ %n:%f\ %{FugitiveStatusline()}\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 execute "set colorcolumn=" . join(range(80,120), ',')
 set number
 set ruler
@@ -110,13 +116,21 @@ map <c-k> <C-W>k<C-W>_
 map <c-o> :res 100<CR>
 "}}}
 
+" quick run for a project. leader leader will be a task that the current
+" project needs.
+" Current Quick Key: Fork Equity - add to cart test
+"nnoremap <leader><leader> :!yarn run add_to_cart --domain=notifications.myshopify.com  --path=/tmp/add-to-cart.png --productTitle='8.5 x 11 Full Color Brochures'<Enter>
+nnoremap <leader><leader> :!yarn run screen_shot --url=https://largearcade.myshopify.com/products/space-force-mug --tmp=/tmp/screenshot.png
+
 " reload .vimrc
 nnoremap <leader>v :source ~/.vimrc<Enter>
 
 " execute current file
-nnoremap <leader>r :!%:p<Enter>
+nnoremap <leader>e :!%:p<Enter>
 nnoremap <leader>R :!%:p<space>
 
+" run RuboCop
+nnoremap <leader>r :RuboCop<Enter>
 " run mocha
 nnoremap <leader>m :!/usr/local/bin/mocha<Enter>
 
@@ -135,9 +149,9 @@ au BufNewFile,BufRead *.arb set filetype=ruby
 filetype plugin indent on     " required!
 
 " rspec and mocha setup {{{
-let g:rspec_command = "!bundle exec rspec --format documentation {spec}"
+let g:rspec_command = "!NODE_ENV=test bundle exec rspec --format documentation {spec}"
 let g:mocha_coffee_command = "!mocha {spec}"
-let g:mocha_js_command = "!time $(yarn bin)/mocha test/bootstrap.js {spec}"
+let g:mocha_js_command = "!NODE_PATH=app/javascript/components/ time $(yarn bin)/mocha spec/javascript/setup.js {spec}"
 let g:mocha_debug_command = "!NODE_PATH=./frontend $(yarn bin)/mocha debug --require ./frontend/tests/mocha.js {spec}"
 
 " Rspec.vim mappings
@@ -154,6 +168,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 map <Leader>sw :Rake rswag:specs:swaggerize<CR>
 
 map <Leader>w :!source '/Users/dixon/.nvm/nvm.sh'; nvm use 0.12; npm test -- config.js<Enter>
+map <Leader>y :!yarn run add_to_cart<Enter>
 
 " Open vertical split with identical configuration to parent
 function! AwesomeSplit()
@@ -218,4 +233,4 @@ augroup quickfix
 augroup END
 
 " Automatically open the quickfix window after grep (including Ggrep)
-autocmd QuickFixCmdPost *grep* cwindow
+" autocmd QuickFixCmdPost *grep* cwindow

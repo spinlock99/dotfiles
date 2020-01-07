@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+touch /tmp/screen.lock
+SCREENRC=~/.screen/storeqa-rc screen

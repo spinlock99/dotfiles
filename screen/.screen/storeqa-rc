@@ -1,0 +1,49 @@
+startup_message off
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;screen\007:ti@:te@'
+defshell -bash
+layout autosave on
+defscrollback 100000
+
+screen -t ngrok
+select ngrok
+wrap off
+stuff "ngrok http 3000 ^M"
+
+screen -t rails
+select rails
+stuff "cd ~/src/storeqa; ^M"
+stuff "touch /tmp/screen.lock ^M"
+stuff ". .env ^M"
+stuff "bundle install ^M"
+stuff "yarn install --check-files ^M"
+stuff "rake db:migrate ^M"
+stuff "rm /tmp/screen.lock ^M"
+stuff "bin/rails server ^M"
+
+screen -t sidekiq
+select sidekiq
+wrap off
+stuff "cd ~/src/storeqa; ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "bundle exec sidekiq ^M"
+
+screen -t webpack
+select webpack
+stuff "nvm use lts/dubnium ^M"
+stuff "cd ~/src/storeqa ^M"
+stuff "while [[ -e /tmp/screen.lock ]]; do echo sleeping; sleep 1; done; ^M"
+stuff "bin/webpack-dev-server ^M"
+
+# start on the dashboard
+select rails
+
+altscreen on
+term screen-256color
+bind 'h' prev
+bind 'l' next
+bind 'K' quit
+
+# change the hardstatus settings to give an window list at the bottom of the
+# screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'

@@ -1,4 +1,4 @@
-" workaround for NERDTree Bug
+"workaround for NERDTree Bug
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
 set nocompatible
@@ -9,12 +9,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " tpope
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rhubarb'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rhubarb'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-fugitive'
 " Grep
 Plugin 'rking/ag.vim'
 " tags
@@ -59,6 +60,9 @@ Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 " elixir
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'benmills/vimux'
+Plugin 'gravityblast/vimux-elixir'
+Plugin 'spiegela/vimix'
 " ruby
 Plugin 'ngmy/vim-rubocop'
 
@@ -120,7 +124,7 @@ map <c-o> :res 100<CR>
 " project needs.
 " Current Quick Key: Fork Equity - add to cart test
 "nnoremap <leader><leader> :!yarn run add_to_cart --domain=notifications.myshopify.com  --path=/tmp/add-to-cart.png --productTitle='8.5 x 11 Full Color Brochures'<Enter>
-nnoremap <leader><leader> :!yarn run screen_shot --url=https://largearcade.myshopify.com/products/space-force-mug --tmp=/tmp/screenshot.png
+nnoremap <leader><leader> :!mix test --max-failures 1 --seed 0 %<Enter>
 
 " reload .vimrc
 nnoremap <leader>v :source ~/.vimrc<Enter>

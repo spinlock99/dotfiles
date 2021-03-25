@@ -74,6 +74,8 @@ autocmd BufNewFile  *.jsx	0r ~/vim/skeleton.jsx
 
 " set preferences {{{1
 syntax enable
+let g:solarized_termcolors=256
+set t_Co=256
 colorscheme solarized
 set background=dark
 " always show status bar
@@ -106,8 +108,8 @@ set scrolloff=10
 " make backspace work
 set backspace=start
 " don't put backup files in with the source
-set backupdir=$TMPDIR//
-set directory=$TMPDIR//
+"set backupdir=$TMPDIR//
+"set directory=$TMPDIR//
 "}}}
 
 " Custom Key Bindings to move between windows {{{
@@ -184,11 +186,18 @@ endfunction
 nnoremap <Leader>vs :call AwesomeSplit()<CR>
 
 "" Use the system clipboard {{{
+"" For Ubuntu
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+"" For OSX
 "" Use pbcopy with visual mode -syntax on
 "set nocompatible
 "
-vmap <C-x> :!pbcopy<CR>
-vmap <C-c> :w !pbcopy<CR><CR>
+"vmap <C-x> :!pbcopy<CR>
+"vmap <C-c> :w !pbcopy<CR><CR>
 "}}}
 "
 " folding

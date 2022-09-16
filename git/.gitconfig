@@ -13,3 +13,5 @@
 	excludefile = /Users/spinlock/.gitignore_global
 [pull]
 	rebase = true
+[diff]
+	colorMoved = zebra

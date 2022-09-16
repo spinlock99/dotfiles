@@ -11,3 +11,5 @@
 [core]
   editor = vim
 	excludefile = /Users/spinlock/.gitignore_global
+[pull]
+	rebase = true

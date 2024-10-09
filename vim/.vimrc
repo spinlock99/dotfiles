@@ -28,6 +28,7 @@ Plugin 'othree/html5.vim'
 " Ember
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
+Plugin 'joukevandermaas/vim-ember-hbs'
 " rspec and mocha!
 "Plugin 'spinlock99/vim-spec'
 Plugin 'geekjuice/vim-spec'
@@ -60,6 +61,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 " elixir
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'c-brenn/phoenix.vim'
 Plugin 'benmills/vimux'
 Plugin 'gravityblast/vimux-elixir'
 Plugin 'spiegela/vimix'
@@ -145,6 +147,9 @@ nnoremap <leader>c :!coffee %:p -n<Enter>
 
 " add ruby highlighting to arbre files
 au BufNewFile,BufRead *.arb set filetype=ruby
+
+" add elixir highlighting to heex files
+au BufRead,BufNewFile *.heex set filetype=eelixir
 
 " highlight trailing whitespace {{{
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red

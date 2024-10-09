@@ -13,6 +13,8 @@ endif
 PACKAGES=bash vim screen git
 .PHONY: $(PACKAGES)
 
+VUNDLE=~/.vim/bundle
+
 all: $(PACKAGES)
 
 list:
@@ -43,8 +45,10 @@ bash: bash/.bash_profile bash/.git-completion.bash
 
 vim: vim/.vimrc
 >stow -t ~ vim
->mkdir -p ~/.vim/bundle
->git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ifeq (,$(wildcard $(VUNDLE)))
+>mkdir -p $(VUNDLE)
+>git clone https://github.com/VundleVim/Vundle.vim.git $(VUNDLE)/Vundle.vim
+endif
 >vim +PluginInstall +qall
 
 vim-clean:

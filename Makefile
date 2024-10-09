@@ -13,6 +13,7 @@ endif
 PACKAGES=bash vim screen git
 .PHONY: $(PACKAGES)
 
+ASDF=~/.asdf
 VUNDLE=~/.vim/bundle
 
 all: $(PACKAGES)
@@ -40,8 +41,16 @@ nvm:
 yarn:
 >brew install yarn
 
-bash: bash/.bash_profile bash/.git-completion.bash
+bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
 >stow -t ~ bash
+
+asdf: bash
+ifeq (,$(wildcard $(ASDF)))
+>git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+endif
+
+asdf-clean:
+>rm -rf $(ASDF)
 
 vim: vim/.vimrc
 >stow -t ~ vim

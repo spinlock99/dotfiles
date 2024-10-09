@@ -10,7 +10,7 @@ ifeq ($(origin .RECIPEPREFIX), undefined)
 endif
 .RECIPEPREFIX = >
 
-PACKAGES=bash vim screen hammerspoon git
+PACKAGES=bash vim screen git
 .PHONY: $(PACKAGES)
 
 all: $(PACKAGES)

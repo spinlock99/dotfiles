@@ -1,6 +1,8 @@
 set editing-mode vi
 
-export PATH=$HOME/bin:./bin:$PATH
+PATH=$HOME/.local/bin:$PATH # Gigalixir tools
+PATH=$HOME/bin:$PATH # dotfiles tools
+export PATH=./bin:$PATH
 export EDITOR="/usr/local/bin/vim"
 #enables color in the terminal bash shell export
 CLICOLOR=1

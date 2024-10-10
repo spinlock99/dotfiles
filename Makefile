@@ -10,7 +10,7 @@ ifeq ($(origin .RECIPEPREFIX), undefined)
 endif
 .RECIPEPREFIX = >
 
-PACKAGES=bash vim screen git keyd
+PACKAGES=bash vim screen git keyd gigalixir
 .PHONY: $(PACKAGES)
 
 ASDF=~/.asdf
@@ -24,6 +24,11 @@ list:
 check:
 >@type brew >/dev/null 2>&1 || $(MAKE) homebrew
 >@type stow >/dev/null 2>&1 || brew install stow
+
+gigalixir: bash
+> asdf install python 3.12.7
+> asdf global python 3.12.7
+> pip3 install gigalixir --user
 
 homebrew-installer:
 >/usr/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install -o homebrew-installer

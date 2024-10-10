@@ -10,7 +10,7 @@ ifeq ($(origin .RECIPEPREFIX), undefined)
 endif
 .RECIPEPREFIX = >
 
-PACKAGES=bash vim screen git
+PACKAGES=bash vim screen git keyd
 .PHONY: $(PACKAGES)
 
 ASDF=~/.asdf
@@ -43,6 +43,13 @@ yarn:
 
 bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
 >stow -t ~ bash
+
+keyd: keyd/default.conf
+>sudo add-apt-repository ppa:keyd-team/ppa
+>sudo apt update
+>sudo apt install keyd
+>sudo stow -t /etc/keyd/ keyd
+>sudo keyd reload
 
 asdf: bash
 ifeq (,$(wildcard $(ASDF)))

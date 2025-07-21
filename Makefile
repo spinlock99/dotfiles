@@ -50,6 +50,15 @@ node: asdf
 >asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 >asdf install nodejs latest
 
+erlang: asdf
+>sudo apt install curl build-essential autoconf m4 libncurses-dev libwxgtk3.2-dev libwxgtk-webview3.2-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils openjdk-21-jdk
+>asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+>asdf install erlang latest
+
+elixir: erlang
+>asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
+>asdf install elixir master
+
 vim: vim/.vimrc
 >stow -t ~ vim
 ifeq (,$(wildcard $(VUNDLE)))

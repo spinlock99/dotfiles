@@ -46,6 +46,10 @@ endif
 asdf-clean:
 >rm -rf $(ASDF)
 
+node: asdf
+>asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+>asdf install nodejs latest
+
 vim: vim/.vimrc
 >stow -t ~ vim
 ifeq (,$(wildcard $(VUNDLE)))

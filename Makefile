@@ -49,11 +49,10 @@ bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
 >stow -t ~ bash
 
 keyd: keyd/default.conf
->sudo add-apt-repository ppa:keyd-team/ppa
 >sudo apt update
 >sudo apt install keyd
 >sudo stow -t /etc/keyd/ keyd
->sudo keyd reload
+>sudo service keyd restart
 
 asdf: bash
 ifeq (,$(wildcard $(ASDF)))

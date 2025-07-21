@@ -2,7 +2,7 @@ set editing-mode vi
 
 export EDITOR="/usr/local/bin/vim"
 export ASDF_DATA_DIR="/home/spinlock/.asdf"
-export PATH="$ASDF_DATA_DIR/shims:$HOME/bin:$HOME/.local/bin:./bin:$PATH"
+export PATH="$ASDF_DATA_DIR/asdf:$ASDF_DATA_DIR/shims:$HOME/bin:$HOME/.local/bin:./bin:$PATH"
 
 #enables color in the terminal bash shell export
 CLICOLOR=1

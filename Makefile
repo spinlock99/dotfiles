@@ -22,8 +22,7 @@ list:
 >@echo $(PACKAGES)
 
 check:
->@type brew >/dev/null 2>&1 || $(MAKE) homebrew
->@type stow >/dev/null 2>&1 || brew install stow
+>@type stow >/dev/null 2>&1 || sudo apt install stow
 
 gigalixir: bash
 > asdf install python 3.12.7
@@ -58,7 +57,9 @@ keyd: keyd/default.conf
 
 asdf: bash
 ifeq (,$(wildcard $(ASDF)))
->git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+>mkdir -p ~/.asdf
+>cd ~/.asdf && git clone https://github.com/asdf-vm/asdf.git --branch v0.18.0
+>cd ~/.asdf/asdf && make
 endif
 
 asdf-clean:

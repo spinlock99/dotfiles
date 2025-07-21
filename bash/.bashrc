@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# enable bash completion for asdf
+. <(asdf completion bash)

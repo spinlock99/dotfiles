@@ -74,6 +74,10 @@ elixir: erlang
 >asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
 >asdf install elixir master
 
+phoenix: elixir
+>elixir -v
+>mix archive.install hex phx_new
+
 postgresql:
 >sudo apt update
 >sudo apt install postgresql

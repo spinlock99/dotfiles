@@ -78,6 +78,10 @@ postgresql:
 >sudo apt update
 >sudo apt install postgresql
 
+inotify:
+>sudo apt update
+>sudo apt install inotify-tools
+
 clean:
 >for package in $(PACKAGES) ; do \
 >	stow -D $$package ; \

@@ -24,9 +24,6 @@ list:
 check:
 >@type stow >/dev/null 2>&1 || sudo apt install stow
 
-git-prompt:
->brew install bash-git-prompt
-
 bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
 >stow -t ~ bash
 

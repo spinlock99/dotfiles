@@ -27,6 +27,24 @@ check:
 bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
 >stow -t ~ bash
 
+git: git/.gitconfig git/.gitignore_global
+>stow -t ~ git
+
+vim: vim/.vimrc
+>stow -t ~ vim
+ifeq (,$(wildcard $(VUNDLE)))
+>mkdir -p $(VUNDLE)
+>git clone https://github.com/VundleVim/Vundle.vim.git $(VUNDLE)/Vundle.vim
+endif
+>vim +PluginInstall +qall
+
+vim-clean:
+>stow -D vim
+>rm -rf ~/.vim
+
+screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
+>stow -t ~ screen
+
 keyd: keyd/default.conf
 >sudo apt update
 >sudo apt install keyd
@@ -55,24 +73,6 @@ erlang: asdf
 elixir: erlang
 >asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
 >asdf install elixir master
-
-vim: vim/.vimrc
->stow -t ~ vim
-ifeq (,$(wildcard $(VUNDLE)))
->mkdir -p $(VUNDLE)
->git clone https://github.com/VundleVim/Vundle.vim.git $(VUNDLE)/Vundle.vim
-endif
->vim +PluginInstall +qall
-
-vim-clean:
->stow -D vim
->rm -rf ~/.vim
-
-screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
->stow -t ~ screen
-
-git: git/.gitconfig git/.gitignore_global
->stow -t ~ git
 
 clean:
 >for package in $(PACKAGES) ; do \

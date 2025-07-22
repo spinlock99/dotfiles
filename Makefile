@@ -74,6 +74,10 @@ elixir: erlang
 >asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
 >asdf install elixir master
 
+postgresql:
+>sudo apt update
+>sudo apt install postgresql
+
 clean:
 >for package in $(PACKAGES) ; do \
 >	stow -D $$package ; \

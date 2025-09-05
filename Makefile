@@ -48,8 +48,13 @@ screen: screen/.screenrc screen/.screen/fast screen/.screen/slow
 keyd: keyd/default.conf
 >sudo apt update
 >sudo apt install keyd
->sudo stow -t /etc/keyd/ keyd
+>sudo stow -t /etc/keyd/ keyd/
 >sudo service keyd restart
+
+bluetooth: bluetooth/main.conf
+>sudo mv /etc/bluetooth/main.conf /etc/bluetooth/main.conf.pkg
+>sudo stow -t /etc/bluetooth/ bluetooth/
+>sudo service bluetooth restart
 
 asdf: bash
 ifeq (,$(wildcard $(ASDF)))
@@ -81,6 +86,7 @@ phoenix: elixir
 postgresql:
 >sudo apt update
 >sudo apt install postgresql
+>sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
 
 inotify:
 >sudo apt update

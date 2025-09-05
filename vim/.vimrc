@@ -1,3 +1,5 @@
+set belloff=all
+
 "workaround for NERDTree Bug
 let g:NERDTreeNodeDelimiter = "\u00a0"
 

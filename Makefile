@@ -15,6 +15,7 @@ PACKAGES=bash vim screen git keyd
 
 ASDF=~/.asdf
 VUNDLE=~/.vim/bundle
+INPUTRC=/etc/inputrc
 
 all: $(PACKAGES)
 
@@ -25,7 +26,14 @@ check:
 >@type stow >/dev/null 2>&1 || sudo apt install stow
 
 bash: bash/.bashrc bash/.bash_profile bash/.git-completion.bash
->stow -t ~ bash
+>stow --target ~ bash
+ifeq ($(wildcard $(INPUTRC)), $(INPUTRC))
+>@if ! [ -L $(INPUTRC) ]; then \
+>echo "$(INPUTRC) is NOT a symbolic link."; \
+>sudo mv $(INPUTRC) $(INPUTRC).system ; \
+>fi
+endif
+>sudo stow --target=/etc etc
 
 git: git/.gitconfig git/.gitignore_global
 >stow -t ~ git

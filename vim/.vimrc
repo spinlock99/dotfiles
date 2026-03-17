@@ -33,7 +33,9 @@ Plugin 'elzr/vim-json'
 Plugin 'joukevandermaas/vim-ember-hbs'
 " rspec and mocha!
 "Plugin 'spinlock99/vim-spec'
-Plugin 'geekjuice/vim-spec'
+"Plugin 'geekjuice/vim-spec'
+" vim-test
+Plugin 'vim-test/vim-test'
 " rename
 Plugin 'danro/rename.vim'
 "nerdtree
@@ -129,8 +131,10 @@ map <c-o> :res 100<CR>
 " quick run for a project. leader leader will be a task that the current
 " project needs.
 " Current Quick Key: Fork Equity - add to cart test
+"looks like shop test
 "nnoremap <leader><leader> :!yarn run add_to_cart --domain=notifications.myshopify.com  --path=/tmp/add-to-cart.png --productTitle='8.5 x 11 Full Color Brochures'<Enter>
-nnoremap <leader><leader> :!mix test --max-failures 1 --seed 0 %<Enter>
+" Elixir before I got vim-spec working
+"nnoremap <leader><leader> :!mix test "$(git rev-parse --show-toplevel)"<Enter>
 
 " reload .vimrc
 nnoremap <leader>v :source ~/.vimrc<Enter>
@@ -161,27 +165,27 @@ au BufRead,BufNewFile *.heex set filetype=eelixir
 "}}}
 filetype plugin indent on     " required!
 
-" rspec and mocha setup {{{
-let g:rspec_command = "!NODE_ENV=test bundle exec rspec --format documentation {spec}"
-let g:mocha_coffee_command = "!mocha {spec}"
-let g:mocha_js_command = "!NODE_PATH=app/javascript/components/ time $(yarn bin)/mocha spec/javascript/setup.js {spec}"
-let g:mocha_debug_command = "!NODE_PATH=./frontend $(yarn bin)/mocha debug --require ./frontend/tests/mocha.js {spec}"
-
-" Rspec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-" TODO: reinstall my fork of vim-spec
+"" rspec and mocha setup {{{
+"let g:rspec_command = "!NODE_ENV=test bundle exec rspec --format documentation {spec}"
+"let g:mocha_coffee_command = "!mocha {spec}"
+"let g:mocha_js_command = "!NODE_PATH=app/javascript/components/ time $(yarn bin)/mocha spec/javascript/setup.js {spec}"
+"let g:mocha_debug_command = "!NODE_PATH=./frontend $(yarn bin)/mocha debug --require ./frontend/tests/mocha.js {spec}"
+"
+"" Rspec.vim mappings
+"map <Leader>t :call RunCurrentSpecFile()<CR>
+"" TODO: reinstall my fork of vim-spec
+""map <Leader>s :call RunNearestSpec(0)<CR>
 "map <Leader>s :call RunNearestSpec(0)<CR>
-map <Leader>s :call RunNearestSpec(0)<CR>
-map <Leader>d :call RunNearestSpec(1)<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-"}}}
-
-" generate swagger.json from integration specs
-map <Leader>sw :Rake rswag:specs:swaggerize<CR>
-
-map <Leader>w :!source '/Users/dixon/.nvm/nvm.sh'; nvm use 0.12; npm test -- config.js<Enter>
-map <Leader>y :!yarn run add_to_cart<Enter>
+"map <Leader>d :call RunNearestSpec(1)<CR>
+"map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
+""}}}
+"
+"" generate swagger.json from integration specs
+"map <Leader>sw :Rake rswag:specs:swaggerize<CR>
+"
+"map <Leader>w :!source '/Users/dixon/.nvm/nvm.sh'; nvm use 0.12; npm test -- config.js<Enter>
+"map <Leader>y :!yarn run add_to_cart<Enter>
 
 " Open vertical split with identical configuration to parent
 function! AwesomeSplit()
@@ -254,3 +258,10 @@ augroup END
 
 " Automatically open the quickfix window after grep (including Ggrep)
 " autocmd QuickFixCmdPost *grep* cwindow
+nnoremap <leader><leader> :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+let test#elixir#exunit#options = '--trace'

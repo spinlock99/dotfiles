@@ -15,3 +15,5 @@
 	rebase = true
 [diff]
 	colorMoved = plain
+[init]
+	defaultBranch = master
